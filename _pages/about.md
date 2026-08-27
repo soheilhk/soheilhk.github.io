@@ -1,13 +1,10 @@
 ---
-
 permalink: /
 title: "Soheil Hakakzadeh"
 author_profile: true
 redirect_from:
-
-* /about/
-* /about.html
-
+  - /about/
+  - /about.html
 ---
 
 # Soheil Hakakzadeh, Ph.D.
