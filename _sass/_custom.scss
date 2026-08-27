@@ -1,1 +1,111 @@
+/* ----------------------------------------------------------
+   Homepage Hero
+   ---------------------------------------------------------- */
 
+.home-hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: 20px 0 50px 0;
+  padding: 30px 0;
+}
+
+.home-hero-image {
+  flex: 0 0 240px;
+  text-align: center;
+}
+
+.home-hero-image img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+}
+
+.home-hero-content {
+  flex: 1;
+}
+
+.home-hero-label {
+  margin: 0 0 10px 0;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #666;
+}
+
+.home-hero-content h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.6em;
+  line-height: 1.15;
+}
+
+.home-hero-title {
+  margin: 0 0 22px 0;
+  font-size: 1.15em;
+  font-weight: 500;
+}
+
+.home-hero-description {
+  max-width: 700px;
+  margin-bottom: 25px;
+  font-size: 1.05em;
+  line-height: 1.75;
+}
+
+.home-hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.home-hero-links a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.home-hero-links a:hover {
+  text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------
+   Mobile
+   ---------------------------------------------------------- */
+
+@media screen and (max-width: 700px) {
+
+  .home-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .home-hero-image {
+    flex-basis: auto;
+  }
+
+  .home-hero-image img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .home-hero-content h1 {
+    font-size: 2em;
+  }
+
+  .home-hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-hero-links {
+    justify-content: center;
+  }
+
+}
