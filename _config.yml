@@ -27,7 +27,7 @@ author:
   name             : "Soheil Hakakzadeh"
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor | Biomedical Ultrasound"
-  location         : "Earth"
+  location         : #"Earth"
   employer         : "University of Tehran"
   uri              : # URL
   email            : "soheil.hakakzadeh@ut.ac.ir" 
@@ -41,7 +41,7 @@ author:
   orcid            : "https://orcid.org/yourorcidurl"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=soheil+hakakzadeh"
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
