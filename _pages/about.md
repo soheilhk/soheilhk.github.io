@@ -6,7 +6,51 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<div class="home-hero">
 
+  <div class="home-hero-image">
+    <img src="/images/profile.png" alt="Soheil Hakakzadeh">
+  </div>
+
+  <div class="home-hero-content">
+
+    <p class="home-hero-label">ASSISTANT PROFESSOR · UNIVERSITY OF TEHRAN</p>
+
+    <h1>Soheil Hakakzadeh, Ph.D.</h1>
+
+    <p class="home-hero-title">
+      Biomedical Imaging · Ultrasound · Photoacoustics · AI
+    </p>
+
+    <p class="home-hero-description">
+      I develop advanced medical imaging technologies at the intersection of
+      ultrasound imaging, photoacoustic imaging, computational imaging,
+      high-performance computing, and artificial intelligence.
+    </p>
+
+    <div class="home-hero-links">
+      <a href="https://scholar.google.com/citations?user=OcHiXygAAAAJ&hl=en" target="_blank">
+        Google Scholar
+      </a>
+
+      <a href="https://github.com/soheilhk" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://orcid.org/" target="_blank">
+        ORCID
+      </a>
+
+      <a href="/cv/">
+        CV
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<hr>
 **Assistant Professor of Biomedical Engineering**
 **University of Tehran**
 
