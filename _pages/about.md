@@ -1,13 +1,11 @@
 ---
 permalink: /
-title: "Soheil Hakakzadeh"
+title: "Soheil Hakakzadeh, Ph.D"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
-
-# Soheil Hakakzadeh, Ph.D.
 
 **Assistant Professor of Biomedical Engineering**
 **University of Tehran**
