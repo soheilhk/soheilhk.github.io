@@ -33,7 +33,7 @@ author_profile: false
       <!-- Photoacoustic Tomography -->
 
       <a class="research-card"
-         href="/research/photoacoustic-tomography/">
+         href="/research/pat/">
 
         <div class="research-card-image">
           <img
