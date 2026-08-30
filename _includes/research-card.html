@@ -55,5 +55,26 @@
       {% endif %}
     </div>
 
+      <!-- INTEGRATED PUBLICATIONS LIST -->
+    {% if post.publications %}
+      <div class="project-publications" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 2px solid #edf2f7;">
+        <h4 style="font-size: 0.9rem; color: #4a5568; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Related Publications</h4>
+        
+        <ul style="list-style: none; padding: 0;">
+          {% for pub_slug in post.publications %}
+            {% for pub in site.publications %}
+              {% if pub.url contains pub_slug %}
+                <li style="margin-bottom: 1rem; padding-left: 0;">
+                  <h3 style="margin: 0; font-size: 1rem;"><a href="{{ pub.url }}">{{ pub.title }}</a></h3>
+                  {% if pub.citation %}
+                    <p style="margin: 0.2rem 0 0; font-size: 0.9rem; color: #718096;">{{ pub.citation }}</p>
+                  {% endif %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
   </div>
 </details>
