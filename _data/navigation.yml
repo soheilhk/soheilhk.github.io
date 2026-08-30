@@ -13,26 +13,25 @@ main:
     
   - title: "Research"
     url: /research/
-    children:
       - title: "Photoacoustic Tomography"
         url: /research/pat/
-        icon: "fa-solid fa-sun"              # Laser / optical excitation energy
+        icon: "fa-solid fa-sun fa-fw"
 
       - title: "Ultrasound Tomography"
         url: /research/usct/
-        icon: "fa-solid fa-circle-nodes"     # Multi-channel sensor array ring & tomographic mesh
+        icon: "fa-solid fa-circle-nodes fa-fw"
 
       - title: "Echocardiography"
         url: /research/echo/
-        icon: "fa-solid fa-heart-pulse"     # Clean ECG/cardiac dynamics
+        icon: "fa-solid fa-heart-pulse fa-fw"
 
       - title: "Sonography"
         url: /research/sono/
-        icon: "fa-solid fa-wave-square"     # Acoustic ultrasound wave & pulse echoes
+        icon: "fa-solid fa-wave-square fa-fw"
 
       - title: "Artificial Intelligence"
         url: /research/ai/
-        icon: "fa-solid fa-brain"           # Neural architectures & deep learning
+        icon: "fa-solid fa-brain fa-fw"
 
 
 
