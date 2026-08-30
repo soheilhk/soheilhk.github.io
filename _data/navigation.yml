@@ -16,19 +16,24 @@ main:
     children:
       - title: "Photoacoustic Tomography"
         url: /research/pat/
-        icon: "fa-solid fa-satellite-dish"
+        icon: "fa-solid fa-bolt-lightning"
+
       - title: "Ultrasound Tomography"
         url: /research/usct/
-        icon: "fa-solid fa-water"
+        icon: "fa-solid fa-compact-disc"
+
       - title: "Echocardiography"
         url: /research/echo/
         icon: "fa-solid fa-heart-pulse"
+
       - title: "Sonography"
         url: /research/sono/
-        icon: "fa-solid fa-wave-square"
-      - title: "AI"
+        icon: "fa-solid fa-tower-broadcast"
+
+      - title: "Artificial Intelligence"
         url: /research/ai/
-        icon: "fa-solid fa-brain"
+        icon: "fa-solid fa-network-wired"
+
 
   - title: "Industry Projects"
     url: /projects/
