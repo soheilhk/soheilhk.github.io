@@ -28,11 +28,11 @@ layout: single
     </div>
     
     <div class="pat-segmented-control" role="group" aria-label="Accordion View Controls">
-      <button type="button" class="pat-seg-btn active" id="pat-btn-expand">
+      <button type="button" class="pat-seg-btn active" id="pat-btn-expand" onclick="expandAllPatCards()">
         <i class="fa-solid fa-angles-down"></i> Expand All
       </button>
       <div class="pat-seg-divider"></div>
-      <button type="button" class="pat-seg-btn" id="pat-btn-collapse">
+      <button type="button" class="pat-seg-btn" id="pat-btn-collapse" onclick="collapseAllPatCards()">
         <i class="fa-solid fa-angles-up"></i> Collapse All
       </button>
     </div>
@@ -78,7 +78,11 @@ layout: single
             <div class="pat-details-box" {% unless proj.image %}style="grid-column: 1 / -1;"{% endunless %}>
               <h4>Technical Overview & Methodology</h4>
               <div class="pat-proj-body">
-                {{ proj.description }}
+                {% if proj.body_html %}
+                  {{ proj.body_html | markdownify }}
+                {% elsif proj.description %}
+                  {{ proj.description | markdownify }}
+                {% endif %}
               </div>
               
               {% if proj.paper or proj.code or proj.dataset %}
@@ -93,71 +97,56 @@ layout: single
                     <i class="fa-brands fa-github"></i> Source Code
                   </a>
                 {% endif %}
-                 for tag in proj.tags %}
-              <span class="pat-lux-tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-          <h3 class="pat-card-heading">{{ proj.title }}</h3>
-          <p class="pat-card-subheading">{{ proj.summary }}</p>
-        </div>
-        <div class="pat-chevron-bubble">
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-      </button>
-
-      <div class="pat-lux-collapse-body">
-        <div class="pat-collapse-inner">
-          <div class="pat-lux-grid">
-            
-            {% if proj.image %}
-            <div class="pat-media-box">
-              <div class="pat-img-wrapper">
-                <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}" onerror="this.src='https://placehold.co/640x420/0f172a/38bdf8?text=Research+Figure'">
+                {% if proj.dataset %}
+                  <a href="{{ proj.dataset }}" target="_blank" rel="noopener noreferrer" class="pat-action-btn secondary">
+                    <i class="fa-solid fa-database"></i> Dataset
+                  </a>
+                {% endif %}
               </div>
-              {% if proj.caption %}
-                <span class="pat-caption"><i class="fa-solid fa-camera"></i> {{ proj.caption }}</span>
               {% endif %}
             </div>
-            {% endif %}
-            
-            <div class="pat-details-box" {% unless proj.image %}style="grid-column: 1 / -1;"{% endunless %}>
-              <h4>Technical Overview & Methodology</h4>
-              <div class="pat-proj-body">
-                {{ proj.description }}
-              </div>
-              
-              {% if proj.paper or proj.code or proj.dataset %}
-              <div class="pat-btn-actions">
-                {% if proj.paper %}
-                  <a href="{{ proj.paper }}" target="_blank" rel="noopener noreferrer" class="pat-action-btn primary">
-                    <i class="fa-solid fa-file-pdf"></i> Read Paper
-                  </a>
-                {% endif %}
-                {% if proj.code %}
-                  <a href="{{ proj.code }}" target="_blank" rel="noopener noreferrer" class="pat-action-btn secondary">
-                    <i class="fa-brands fa-github"></i> Source Code
-                  </a>
-                {% endif %}
-                title: "Echocardiography"
-permalink: /research/echo/
-author_profile: true
 
-badge_icon: "fa-solid fa-heart-pulse"
-badge_text: "Cardiovascular Ultrasound"
-hero_title: "Echocardiography & Cardiac Strain Imaging"
-hero_desc: "Advancing real-time cardiac ultrasound diagnostics through GPU-accelerated speckle tracking, high-frame-rate plane-wave imaging, and deep learning-based automated view classification."
+          </div>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
 
-projects:
-  - title: "Automated Left Ventricular Strain & Speckle Tracking"
-    summary: "Real-time 2D Lagrangian strain estimation for ischemic border identification."
-    featured: true
-    tags: 
-      - "Speckle Tracking"
-      - "Myocardial Strain"
-      - "CUDA/C++"
-    image: "/images/research/echo-strain.jpg"
-    caption: "Fig 1. Automated endocardial contouring and segmental longitudinal strain curves."
-    description: "Quantification of regional myocardial mechanics via speckle tracking echocardiography (STE) provides sensitive diagnostic metrics prior to manifest ejection fraction degradation. We developed a high-throughput block-matching algorithm optimized on NVIDIA GPUs that computes global longitudinal strain (GLS) and radial strain tensors at >120 frames per second."
-    paper: "https://doi.org/"
-    code: "https://github.com/soheilhk/EchoApp"
----
+</div>
+
+<!-- INTERACTIVE ACCORDION SCRIPT -->
+<script>
+function togglePatLuxuryCard(button) {
+  const card = button.closest('.pat-lux-card');
+  const isExpanded = card.classList.contains('is-expanded');
+  
+  if (isExpanded) {
+    card.classList.remove('is-expanded');
+    button.setAttribute('aria-expanded', 'false');
+  } else {
+    card.classList.add('is-expanded');
+    button.setAttribute('aria-expanded', 'true');
+  }
+}
+
+function expandAllPatCards() {
+  document.querySelectorAll('.pat-lux-card').forEach(card => {
+    card.classList.add('is-expanded');
+    const btn = card.querySelector('.pat-lux-header');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+  });
+  document.getElementById('pat-btn-expand')?.classList.add('active');
+  document.getElementById('pat-btn-collapse')?.classList.remove('active');
+}
+
+function collapseAllPatCards() {
+  document.querySelectorAll('.pat-lux-card').forEach(card => {
+    card.classList.remove('is-expanded');
+    const btn = card.querySelector('.pat-lux-header');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+  });
+  document.getElementById('pat-btn-collapse')?.classList.add('active');
+  document.getElementById('pat-btn-expand')?.classList.remove('active');
+}
+</script>
