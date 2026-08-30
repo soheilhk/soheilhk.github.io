@@ -1,5 +1,5 @@
 /* ==========================================================
-   1. OVERRIDE THEME CLIPPING (Crucial for Dropdowns)
+   1. OVERRIDE THEME CLIPPING & NAVBAR STRUCTURE
    ========================================================== */
 .masthead,
 .masthead__inner-wrap,
@@ -12,135 +12,188 @@
 .masthead {
   position: relative;
   z-index: 1000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eef2f6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.masthead__inner-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.greedy-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
 }
 
 /* ==========================================================
-   2. HOMEPAGE HERO
+   2. BRANDING (Left Title & Subtitle)
    ========================================================== */
-.home-hero {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  margin: 20px 0 50px 0;
-  padding: 30px 0;
-}
-
-.home-hero-image {
-  flex: 0 0 240px;
-  text-align: center;
-}
-
-.home-hero-image img {
-  width: 230px;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid #e5e5e5;
-}
-
-.home-hero-content {
-  flex: 1;
-}
-
-.home-hero-label {
-  margin: 0 0 10px 0;
-  font-size: 0.78em;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #666;
-}
-
-.home-hero-content h1 {
-  margin: 0 0 10px 0;
-  font-size: 2.6em;
+.site-title {
+  display: flex !important;
+  flex-direction: column !important;
+  text-decoration: none !important;
+  padding: 8px 0;
   line-height: 1.15;
 }
 
-.home-hero-title {
-  margin-bottom: 20px;
-  font-size: 1.4em;
-  color: #777;
+.site-title-main {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #0f172a;
+  text-transform: uppercase;
+}
+
+.site-title-sub {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #64748b;
+  margin-top: 3px;
 }
 
 /* ==========================================================
-   3. RESEARCH PAGE STYLES
+   3. TOP NAVIGATION LINKS & ACTIVE INDICATOR
    ========================================================== */
-.research-container {
-  margin-top: 40px;
+.greedy-nav .visible-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.research-item {
-  margin-bottom: 30px;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 6px;
+.masthead__menu-item {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.masthead__menu-item a {
+  display: inline-block;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #334155;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.masthead__menu-item a:hover {
+  color: #0a2540;
+}
+
+/* Active bottom underline indicator */
+.masthead__menu-item.active-nav > a,
+.masthead__menu-item.selected > a {
+  color: #0a2540 !important;
+  font-weight: 600 !important;
+  border-bottom: 2.5px solid #0a2540 !important;
 }
 
 /* ==========================================================
-   4. NAVIGATION DROPDOWN (Matches has-dropdown in masthead.html)
+   4. MODERN FLOATING DROPDOWN CARD
    ========================================================== */
-/* Dropdown arrow next to title */
+.masthead__menu-item.has-dropdown {
+  position: relative !important;
+}
+
 .dropdown-arrow {
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.7em;
   margin-left: 4px;
+  color: #64748b;
   transition: transform 0.2s ease;
 }
 
-.has-dropdown:hover .dropdown-arrow {
+.masthead__menu-item.has-dropdown:hover .dropdown-arrow {
   transform: rotate(180deg);
+  color: #0a2540;
 }
 
-/* Dropdown menu container */
-.masthead__menu-item.has-dropdown {
-  position: relative;
+/* The Dropdown Menu Box */
+.masthead__menu-item.has-dropdown ul.dropdown-menu {
+  display: none !important;
+  position: absolute !important;
+  top: calc(100% + 4px) !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  min-width: 270px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.04) !important;
+  padding: 10px !important;
+  margin: 0 !important;
+  list-style: none !important;
+  z-index: 99999 !important;
 }
 
-.masthead__menu-item.has-dropdown .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 220px;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  padding: 8px 0;
-  margin: 0;
-  list-style: none;
-  z-index: 9999;
+/* Hover reveal */
+.masthead__menu-item.has-dropdown:hover > ul.dropdown-menu {
+  display: flex !important;
+  flex-direction: column !important;
+  animation: dropdownFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Show dropdown on hover */
-.masthead__menu-item.has-dropdown:hover .dropdown-menu {
-  display: block;
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -6px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }
 
-/* Dropdown list items */
-.masthead__menu-item.has-dropdown .dropdown-menu li {
-  display: block;
-  margin: 0;
-  padding: 0;
+/* Individual Dropdown Item */
+.masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item {
+  display: block !important;
+  width: 100% !important;
+  margin: 2px 0 !important;
 }
 
-.masthead__menu-item.has-dropdown .dropdown-menu li a {
-  display: block;
-  padding: 8px 18px;
-  font-size: 0.9em;
-  color: #333333;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 0.15s ease, color 0.15s ease;
+.masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item a {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 9px 12px !important;
+  border-radius: 8px !important;
+  font-size: 0.88rem !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+  border-bottom: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease !important;
 }
 
-.masthead__menu-item.has-dropdown .dropdown-menu li a:hover {
-  background-color: #f4f6f8;
-  color: #000000;
+.masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item a:hover {
+  background-color: #f8fafc !important;
+  color: #0284c7 !important;
 }
 
-/* Invisible bridge so mouse doesn't drop hover when moving from tab to menu */
-.masthead__menu-item.has-dropdown .dropdown-menu::before {
+/* Dropdown Icon Styling */
+.dropdown-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item a:hover .dropdown-icon {
+  color: #0284c7;
+}
+
+/* Top invisible bridge to prevent hover loss */
+.masthead__menu-item.has-dropdown ul.dropdown-menu::before {
   content: "";
   position: absolute;
   top: -12px;
