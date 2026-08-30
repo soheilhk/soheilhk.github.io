@@ -3,7 +3,7 @@ title: "Blind angle and angular range detection in planar and limited-view geome
 collection: publications
 category: conferences
 permalink: /publication/Conf_IEEE_ICEE2021_Hakakzadeh_et_al_blind
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
+excerpt: 'We formulate the exact mathematical dependence between transducer positioning and image fidelity across 2D PACT geometries, defining the “blind angle” mechanism governing limited-view reconstruction artifacts.'
 date: 2021-02-17
 venue: '2021 29th Iranian Conference on Electrical Engineering (ICEE)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/9544114'
