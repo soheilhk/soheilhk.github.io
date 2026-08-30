@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/Conf_IEEE_ICEE2022_Hakakzadeh_et_al_FADAS
 authors: "S Hakakzadeh, SM Mostafavi, Z Kavehvash"
-excerpt: "excerpt: "Overcoming standard DAS and UBP limitations in C-PAT via fast Adapted Delay and Sum (ADAS/F-ADAS) beamforming, demonstrated with the Edge Uniformity Index (EUI) to deliver near-ideal spatial reconstruction uniformity."
+excerpt: "Overcoming standard DAS and UBP limitations in C-PAT via fast Adapted Delay and Sum (ADAS/F-ADAS) beamforming, demonstrated with the Edge Uniformity Index (EUI) to deliver near-ideal spatial reconstruction uniformity."
 date: 2022-5-17
 venue: '2022 30th International Conference on Electrical Engineering (ICEE)'
 paperurl: 'files/publications/Conf_IEEE_ICEE2022_Hakakzadeh_et_al_FADAS.pdf'
