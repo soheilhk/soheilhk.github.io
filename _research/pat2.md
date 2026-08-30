@@ -6,12 +6,13 @@ publications:
 collection: research
 category: pat
 date: 2022-06-14
-venue: "Resolousion Enhancement / Multi-Angle"
+venue: "Ring-Array / Resolousion Enhancement"
 excerpt: "A compound orbital-axial scanning strategy synthesizing wide-acceptance-angle virtual detectors to achieve location-independent tangential resolution in circular PAT."
-image: "/images/research/pat-multi-angle-scanning.jpg"
-image_caption: "Figure 1: Multi-angle detection geometry combining central rotations (±8°/±16°) with circular ROI scanning to compensate finite transducer aperture."
-paperurl: "https://doi.org/10.1016/j.pacs.2022.100373"
-codeurl: ""
+image: "images/research/pat/pat2.PNG"
+image_caption: "Figure 1:  The experimental results using the complex leaf skeleton phantom. The
+reconstructed images with (a) the conventional method and (b) the proposed method,
+respectively. The yellow arrows and dashed-rectangles show the structure that are not
+detectable with the conventional detection geometry."
 expanded: true
 ---
 
