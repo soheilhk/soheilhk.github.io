@@ -1,7 +1,7 @@
 ---
 layout: research-category
 title: "Echocardiography"
-permalink: /research/echo/
+permalink: /research/echo/ 
 author_profile: true
 
 badge_icon: "fa-solid fa-heart-pulse"
