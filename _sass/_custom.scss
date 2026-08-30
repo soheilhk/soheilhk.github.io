@@ -1,5 +1,5 @@
 /* ==========================================================
-   1. OVERRIDE THEME CLIPPING & NAVBAR STRUCTURE
+   1. SLIM NAVBAR HEIGHT & STRUCTURE
    ========================================================== */
 .masthead,
 .masthead__inner-wrap,
@@ -18,16 +18,19 @@
 }
 
 .masthead__inner-wrap {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px; /* Reduced vertical padding */
 }
 
+.greedy-nav.custom-navbar,
 .greedy-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 70px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  min-height: 48px !important; /* Reduced from 72px to 48px */
+  height: 48px !important;     /* Locks the height */
+  background: transparent !important;
 }
 
 /* ==========================================================
