@@ -7,7 +7,7 @@ authors: "S. Hakakzadeh and Z. Kavehvash"
 excerpt: "Presents an analytical framework for circular PACT systems with focused transducers (positive/negative focus) to map angular blind spots and partition the imaging chamber into distinct resolution zones. Provides closed-form formulations to evaluate optimal imaging range and guide transducer geometry design."
 date: 2021-02-17
 venue: '2021 29th Iranian Conference on Electrical Engineering (ICEE)'
-paperurl: 'https://github.com/soheilhk/soheilhk.github.io/blob/master/files/publications/Conf_IEEE_ICEE2021_Hakakzadeh_et_al_focusg.pdf'
+paperurl: 'files/publications/Conf_IEEE_ICEE2021_Hakakzadeh_et_al_focusg.pdf'
 publisherurl: 'https://ieeexplore.ieee.org/abstract/document/9544449/'
 citation: 'S. Hakakzadeh and Z. Kavehvash, "Image Quality Equations for Focused Transducer in Circular Photoacoustic Computed Tomography," 2021 29th Iranian Conference on Electrical Engineering (ICEE), Tehran, Iran, Islamic Republic of, 2021, pp. 917-921, doi: 10.1109/ICEE52715.2021.9544449.'
 ---
