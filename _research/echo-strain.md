@@ -9,6 +9,7 @@ image: "/images/research/echo-strain.jpg"
 image_caption: "Figure 1: Real-time strain tensor mapping and segmental bullseye representation."
 paperurl: "https://doi.org/10.1109/your-paper-doi"
 codeurl: "https://github.com/soheilhk/EchoApp"
+expanded: true
 ---
 
 **Key Technical Details & Innovations:**
