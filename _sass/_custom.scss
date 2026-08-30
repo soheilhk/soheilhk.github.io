@@ -57,136 +57,95 @@
 }
 
 .home-hero-title {
-margin-bottom: 20px;
-
-font-size: 1.4em;
-
-color: #777;
-
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  color: #777;
 }
 
 /* ==========================================================
-
-RESEARCH PAGE STYLES
-========================================================== */
-
+   3. RESEARCH PAGE STYLES
+   ========================================================== */
 .research-container {
-
-margin-top: 40px;
-
+  margin-top: 40px;
 }
 
 .research-item {
-
-margin-bottom: 30px;
-
-padding: 20px;
-
-background: #f9f9f9;
-
-border-radius: 6px;
-
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 6px;
 }
 
 /* ==========================================================
-
-NAVIGATION DROPDOWN (The Dropdown Logic)
-========================================================== */
-
-/* The parent container for the dropdown */
-
-.nav-item-dropdown {
-
-position: relative;
-
+   4. NAVIGATION DROPDOWN (Matches has-dropdown in masthead.html)
+   ========================================================== */
+/* Dropdown arrow next to title */
+.dropdown-arrow {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-left: 4px;
+  transition: transform 0.2s ease;
 }
 
-/* The actual dropdown menu */
+.has-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
 
-.dropdown-menu {
+/* Dropdown menu container */
+.masthead__menu-item.has-dropdown {
+  position: relative;
+}
 
-display: none; /* Hidden by default */
-
-position: absolute;
-
-top: 100%;
-
-left: 0;
-
-width: 200px;
-
-background: #fff;
-
-border: 1px solid #e5e5e5;
-
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-
-padding: 10px 0;
-
-z-index: 9999;
-
-list-style: none;
-
-margin: 0;
-
+.masthead__menu-item.has-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+  z-index: 9999;
 }
 
 /* Show dropdown on hover */
-
-.nav-item-dropdown:hover .dropdown-menu {
-
-display: block;
-
+.masthead__menu-item.has-dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* Dropdown list items */
-
-.dropdown-menu li {
-
-display: block;
-
-padding: 0;
-
+.masthead__menu-item.has-dropdown .dropdown-menu li {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-.dropdown-menu li a {
-
-display: block;
-
-padding: 10px 20px;
-
-color: #333;
-
-text-decoration: none;
-
-font-size: 0.9em;
-
+.masthead__menu-item.has-dropdown .dropdown-menu li a {
+  display: block;
+  padding: 8px 18px;
+  font-size: 0.9em;
+  color: #333333;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.dropdown-menu li a:hover {
-
-background: #f4f4f4;
-
-color: #000;
-
+.masthead__menu-item.has-dropdown .dropdown-menu li a:hover {
+  background-color: #f4f6f8;
+  color: #000000;
 }
 
-/* Invisible bridge to prevent flickering when moving from link to dropdown */
-
-.dropdown-menu::before {
-
-content: “”;
-
-position: absolute;
-
-top: -15px;
-
-left: 0;
-
-right: 0;
-
-height: 15px;
-
-background: transparent;
-
+/* Invisible bridge so mouse doesn't drop hover when moving from tab to menu */
+.masthead__menu-item.has-dropdown .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
 }
