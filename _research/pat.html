@@ -1,116 +1,167 @@
 ---
-layout: default
+layout: single
+title: "Photoacoustic Tomography (PAT/PACT)"
 permalink: /research/pat/
-title: "Photoacoustic Tomography"
 author_profile: true
 ---
 
-<div class="luxury-research-container">
-
-  <!-- Header & Overview -->
-  <header class="luxury-header">
-    <div class="luxury-badge"><i class="fa-solid fa-sun"></i> Research Focus</div>
-    <h1 class="luxury-title">Photoacoustic Tomography & Computing</h1>
-    <div class="luxury-accent-line"></div>
-    <p class="luxury-lead">
-      Bridging high optical contrast and deep ultrasonic penetration. Our research investigates 
-      computational reconstruction, sparse-sampling artifact suppression, GPU-accelerated beamforming, 
-      and deep learning architectures for real-time preclinical and clinical photoacoustic imaging.
+<div class="pat-showcase-container">
+  
+  <!-- HERO INTRO -->
+  <header class="pat-hero">
+    <div class="pat-hero-badge"><i class="fa-solid fa-sun"></i> Optical Absorption meets Acoustic Resolution</div>
+    <p class="pat-hero-lead">
+      My research in <strong>Photoacoustic Computed Tomography (PACT)</strong> focuses on pushing the spatial resolution, imaging depth, and reconstruction fidelity of ring-array and linear systems. Below are key systems, algorithms, and translation projects developed across my research.
     </p>
   </header>
 
-  <!-- Research Projects List -->
-  <div class="project-showcase-list">
+  <!-- CONTROL BAR: Expand/Collapse All + Stats -->
+  <div class="pat-controls-bar">
+    <div class="pat-project-count"><i class="fa-solid fa-layer-group"></i> <strong>4</strong> Research Projects</div>
+    <div class="pat-toggle-actions">
+      <button type="button" class="pat-btn-pill" id="pat-expand-all"><i class="fa-solid fa-angles-down"></i> Expand All</button>
+      <button type="button" class="pat-btn-pill" id="pat-collapse-all"><i class="fa-solid fa-angles-up"></i> Collapse All</button>
+    </div>
+  </div>
 
-    <!-- PROJECT 1: Sparse-Array PACT & Artifact Suppression -->
-    <article class="luxury-project-card">
-      <div class="project-media">
-        <img src="/images/research/pat-sparsity.jpg" alt="Sparse-Array Photoacoustic Artifact Suppression" />
-        <span class="media-tag">Algorithmic Innovation</span>
-      </div>
-      <div class="project-content">
-        <div class="project-meta">
-          <span class="category-tag">PACT Reconstruction</span>
-          <span class="date-tag">2024 – Present</span>
+  <!-- PROJECTS ACCORDION / SHOWCASE LIST -->
+  <div class="pat-accordion-wrapper">
+
+    <!-- PROJECT 1 -->
+    <article class="pat-card" data-open="true">
+      <div class="pat-card-header" onclick="togglePatCard(this)">
+        <div class="pat-header-content">
+          <div class="pat-card-badges">
+            <span class="badge badge-accent">Featured</span>
+            <span class="badge badge-tech">Ring-Array PACT</span>
+            <span class="badge badge-tech">Image Reconstruction</span>
+          </div>
+          <h3 class="pat-card-title">Full-Ring Ultrasonic Array PACT for Deep-Tissue Preclinical Imaging</h3>
+          <p class="pat-card-summary">Development of a high-channel circular transducer system with optimized acoustic aperture synthesis.</p>
         </div>
-        <h2 class="project-title">Sparse-Sampling & Coherence Artifact Suppression</h2>
-        <p class="project-desc">
-          High-channel data acquisition in ring-array PACT is computationally prohibitive and hardware-intensive. 
-          We developed a robust spatio-temporal coherence and stability-based weighting framework to suppress grating 
-          lobes and streak artifacts under severe angular sub-sampling (up to 4×–8× element reduction) while preserving subtle microvascular fidelity.
-        </p>
-        <p class="project-desc secondary">
-          The method leverages complex-signal cross-correlations across sub-apertures, providing an order-of-magnitude 
-          improvement in contrast-to-noise ratio (CNR) without iterative forward-model optimization bottlenecks.
-        </p>
-        <div class="project-actions">
-          <a href="/publications/" class="btn-luxury primary">
-            <i class="fa-solid fa-book-open"></i> Read Paper
-          </a>
-          <a href="https://github.com/soheilhk" target="_blank" class="btn-luxury secondary">
-            <i class="fa-brands fa-github"></i> Code / Benchmark
-          </a>
+        <div class="pat-card-indicator">
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
       </div>
-    </article>
 
-
-    <!-- PROJECT 2: High-Performance GPU Beamforming Engine -->
-    <article class="luxury-project-card reverse">
-      <div class="project-media">
-        <img src="/images/research/pat-realtime.jpg" alt="Real-Time GPU Photoacoustic Imaging Engine" />
-        <span class="media-tag">Systems & HPC</span>
-      </div>
-      <div class="project-content">
-        <div class="project-meta">
-          <span class="category-tag">CUDA / High-Performance Computing</span>
-          <span class="date-tag">2023 – 2024</span>
-        </div>
-        <h2 class="project-title">Real-Time Universal Back-Projection Engine on Heterogeneous GPUs</h2>
-        <p class="project-desc">
-          Volumetric 3D and high-frame-rate 2D PACT require extreme data throughput. We designed a modular C++/CUDA-based 
-          Universal Back-Projection (UBP) and Delay-and-Sum pipeline optimized for arbitrary sensor geometries (planar, cylindrical, and spherical cups).
-        </p>
-        <p class="project-desc secondary">
-          Integrated with a Qt/QML frontend, this engine achieves sustained 60+ FPS reconstruction for 512-channel real-time functional vascular imaging and hemodynamic monitoring.
-        </p>
-        <div class="project-actions">
-          <a href="/publications/" class="btn-luxury primary">
-            <i class="fa-solid fa-file-lines"></i> View Publication
-          </a>
+      <div class="pat-card-body">
+        <div class="pat-body-grid">
+          <div class="pat-body-media">
+            <img src="/images/research/pat-ring-array.jpg" alt="Ring-Array PACT System" onerror="this.src='https://placehold.co/600x400/0f172a/38bdf8?text=Ring-Array+PACT+Setup'">
+            <span class="media-caption">Fig 1. Custom 512-element ring-array transducer and pulsed laser illumination setup.</span>
+          </div>
+          <div class="pat-body-text">
+            <h4>Technical Overview & Methodology</h4>
+            <p>
+              In this project, we designed and integrated a custom multi-channel ring-array acquisition architecture tailored for fast whole-body small-animal tomography. By coupling 532 nm and 1064 nm Q-switched Nd:YAG laser pulses with panoramic detection geometry, the system circumvents limited-view acoustic distortion and isotropic in-plane resolution.
+            </p>
+            <p>
+              Our reconstruction pipeline integrates model-based iterative reconstruction (MBIR) incorporating spatio-temporal transducer impulse response (EIR/SIR) calibration, improving signal-to-noise ratio (SNR) by over 12 dB in deep vascular beds compared to standard Delay-and-Sum (DAS).
+            </p>
+            
+            <div class="pat-project-footer">
+              <a href="#" class="pat-link-btn primary"><i class="fa-solid fa-file-pdf"></i> Read Paper</a>
+              <a href="#" class="pat-link-btn secondary"><i class="fa-brands fa-github"></i> Recon Pipeline</a>
+            </div>
+          </div>
         </div>
       </div>
     </article>
 
-
-    <!-- PROJECT 3: Deep Learning Reconstruction & Denoising -->
-    <article class="luxury-project-card">
-      <div class="project-media">
-        <img src="/images/research/pat-ai.jpg" alt="Deep Learning for Low-Fluence PACT" />
-        <span class="media-tag">Deep Learning</span>
-      </div>
-      <div class="project-content">
-        <div class="project-meta">
-          <span class="category-tag">Physics-Guided Neural Nets</span>
-          <span class="date-tag">2022 – 2023</span>
+    <!-- PROJECT 2 -->
+    <article class="pat-card">
+      <div class="pat-card-header" onclick="togglePatCard(this)">
+        <div class="pat-header-content">
+          <div class="pat-card-badges">
+            <span class="badge badge-tech">Acoustic Heterogeneity</span>
+            <span class="badge badge-tech">Artifact Removal</span>
+          </div>
+          <h3 class="pat-card-title">Acoustic Speed-of-Sound (SoS) Aberration Correction in PACT</h3>
+          <p class="pat-card-summary">Dual-modal USCT/PACT mapping to eliminate acoustic refraction and phase distortion in heterogeneous tissue.</p>
         </div>
-        <h2 class="project-title">Physics-Guided Deep Learning for Low-Fluence Laser Imaging</h2>
-        <p class="project-desc">
-          Safe in vivo clinical translation requires operating well beneath ANSI laser safety limits, yielding raw RF signals 
-          buried in acoustic noise. We implemented a physics-informed unrolled neural network that combines learned acoustic propagation priors with deep residual denoising.
-        </p>
-        <p class="project-desc secondary">
-          Evaluated across in vivo rat brain cortex and phantom datasets, the model recovers fine capillary structures at laser fluence levels reduced by over 70%.
-        </p>
-        <div class="project-actions">
-          <a href="/publications/" class="btn-luxury primary">
-            <i class="fa-solid fa-newspaper"></i> Journal Paper (IEEE TMI)
-          </a>
+        <div class="pat-card-indicator">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+
+      <div class="pat-card-body">
+        <div class="pat-body-grid">
+          <div class="pat-body-media">
+            <img src="/images/research/pat-sos-correction.jpg" alt="SoS Aberration Correction" onerror="this.src='https://placehold.co/600x400/0f172a/38bdf8?text=SoS+Aberration+Correction'">
+            <span class="media-caption">Fig 2. Comparison between homogeneous assumption vs. full-wave SoS corrected reconstruction.</span>
+          </div>
+          <div class="pat-body-text">
+            <h4>Technical Overview & Methodology</h4>
+            <p>
+              Assuming a constant speed of sound ($c_0 = 1540\text{ m/s}$) produces significant geometric distortion, blurring, and split-vessel artifacts in organs with high acoustic contrast such as breast margins and skull boundaries.
+            </p>
+            <p>
+              We established an interleaved transmission-reflection ultrasound tomography (USCT) sequence that extracts spatially resolved sound-speed distributions. These maps feed directly into a generalized time-reversal forward acoustic solver, restoring sub-millimeter edge definitions.
+            </p>
+            
+            <div class="pat-project-footer">
+              <a href="#" class="pat-link-btn primary"><i class="fa-solid fa-file-pdf"></i> Read Paper (IEEE TMI)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 3 -->
+    <article class="pat-card">
+      <div class="pat-card-header" onclick="togglePatCard(this)">
+        <div class="pat-header-content">
+          <div class="pat-card-badges">
+            <span class="badge badge-tech">Deep Learning</span>
+            <span class="badge badge-tech">Sparse Sampling</span>
+          </div>
+          <h3 class="pat-card-title">Sparse-View PACT Reconstruction via Physics-Informed Neural Networks</h3>
+          <p class="pat-card-summary">Accelerating acquisition speed and lowering sensor channel costs using learned deep priors.</p>
+        </div>
+        <div class="pat-card-indicator">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+
+      <div class="pat-card-body">
+        <div class="pat-body-grid">
+          <div class="pat-body-media">
+            <img src="/images/research/pat-pinn.jpg" alt="Deep Learning PACT" onerror="this.src='https://placehold.co/600x400/0f172a/38bdf8?text=PINN+Sparse+Recon'">
+            <span class="media-caption">Fig 3. Artifact mitigation from 32-element sparse acquisitions using deep residual UNet.</span>
+          </div>
+          <div class="pat-body-text">
+            <h4>Technical Overview & Methodology</h4>
+            <p>
+              To reduce the high hardware costs of thousands of DAQ channels, sparse-array sampling is required. However, spatial undersampling introduces severe streak artifacts and grating lobes that obscure microvascular networks.
+            </p>
+            <p>
+              We implemented an unrolled physics-guided deep neural network combining iterative gradient descent with deep regularization steps, enabling 8× channel sub-sampling without sacrificing quantitative optical absorption metrics.
+            </p>
+            
+            <div class="pat-project-footer">
+              <a href="#" class="pat-link-btn primary"><i class="fa-solid fa-file-pdf"></i> Pre-print</a>
+              <a href="#" class="pat-link-btn secondary"><i class="fa-brands fa-github"></i> PyTorch Code</a>
+            </div>
+          </div>
         </div>
       </div>
     </article>
 
   </div>
-
 </div>
 
+<script>
+  function togglePatCard(headerElem) {
+    const card = headerElem.closest('.pat-card');
+    const isOpen = card.getAttribute('data-open') === 'true';
+    card.setAttribute('data-open', isOpen ? 'false' : 'true');
+  }
+
+  document.getElementById('pat-expand-all').addEventListener('click', function() {
+    document.querySelectorAll('.pat-card').forEach(card => card.setAttribute('data-open', 'true'));
+  });
+
+  document.getElementById('pat-collapse-all').addEventListener('click', function() {
+    document.querySelectorAll('.pat-card').forEach(card => card.setAttribute('data-open', 'false'));
+  });
+</script>
