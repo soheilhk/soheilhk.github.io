@@ -1,5 +1,5 @@
 ---
-title: "Automated Left Ventricular Strain & Speckle Tracking"
+title: "Automated22 Left Ventricular Strain & Speckle Tracking"
 collection: research
 category: echo
 permalink: /research/echo/strain
