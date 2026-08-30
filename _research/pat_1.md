@@ -6,7 +6,7 @@ publications:
 collection: research
 category: pat
 date: 2021-07-01
-venue: "PACT Project / PACT Analysis"
+venue: "Ring-Array / PACT Analysis"
 excerpt: "Closed-form analytical frameworks for evaluating spatial resolution zones, acoustic blind spots, and limited-view artifacts across circular, planar, and focused-transducer PACT geometries."
 image: "images/research/pat/pat1.PNG"
 
