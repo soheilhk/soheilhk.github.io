@@ -14,7 +14,25 @@ main:
   - title: "Research"
     url: /research/
 
-  - title: "Projects"
+   - title: "Research"
+    url: /research/
+    children:
+      - title: "Photoacoustic Tomography"
+        url: /research/photoacoustic-tomography/
+
+      - title: "Ultrasound Tomography"
+        url: /research/ultrasound-tomography/
+
+      - title: "Echocardiography"
+        url: /research/echocardiography/
+
+      - title: "Sonography"
+        url: /research/sonography/
+
+      - title: "AI"
+        url: /research/ai/
+
+  - title: "Industry Projects"
     url: /projects/
 
   - title: "Publications"
