@@ -13,7 +13,9 @@ layout: single
     </div>
     {% endif %}
     <h1 class="pat-hero-title">{{ page.hero_title | default: page.title }}</h1>
+    {% if page.hero_desc %}
     <p class="pat-hero-lead">{{ page.hero_desc }}</p>
+    {% endif %}
   </header>
 
   <!-- LUXURY CONTROL TOOLBAR -->
@@ -21,24 +23,18 @@ layout: single
     <div class="pat-toolbar-meta">
       <span class="pat-counter-badge">
         <i class="fa-solid fa-layer-group"></i> 
-        <strong id="pat-total-count">{{ page.projects.size | default: 0 }}</strong> Projects
+        <strong>{{ page.projects.size | default: 0 }}</strong> Projects
       </span>
     </div>
     
-    <!-- Segmented Toggle Pill -->
     <div class="pat-segmented-control" role="group" aria-label="Accordion View Controls">
-      <button
-              <span class="pat-lux-tag accent"><i class="fa-solid fa-star"></i> Featured</span>
-            {% endif %}
-            {% for tag in proj.tags %}
-              <span class="pat-lux-tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-          <h3 class="pat-card-heading">{{ proj.title }}</h3>
-          <p class="pat-card-subheading">{{ proj.summary }}</p>
-        </div>
-        <div class="pat-chevron-bubble">
-          <i>
+      <button type="button" class="pat-seg-btn active" id="pat-btn-expand">
+        <i class="fa-solid fa-angles-down"></i> Expand All
+      </button>
+      <div class="pat-seg-divider"></div>
+      <button type="button" class="pat-seg-btn" id="pat-btn-collapse">
+        <i class="fa-solid fa-angles-up"></i> Collapse All
+      </button>
     </div>
   </div>
 
@@ -46,7 +42,7 @@ layout: single
   <div class="pat-accordion-list">
     {% for proj in page.projects %}
     <article class="pat-lux-card is-expanded" id="proj-{{ forloop.index }}">
-      <button class="pat-lux-header" aria-expanded="true" onclick="togglePatLuxuryCard(this)">
+      <button class="pat-lux-header" type="button" aria-expanded="true" onclick="togglePatLuxuryCard(this)">
         <div class="pat-header-meta">
           <div class="pat-tag-row">
             {% if proj.featured %}
@@ -82,7 +78,7 @@ layout: single
             <div class="pat-details-box" {% unless proj.image %}style="grid-column: 1 / -1;"{% endunless %}>
               <h4>Technical Overview & Methodology</h4>
               <div class="pat-proj-body">
-                {{ proj.body_html | markdownify }}
+                {{ proj.description }}
               </div>
               
               {% if proj.paper or proj.code or proj.dataset %}
@@ -97,84 +93,71 @@ layout: single
                     <i class="fa-brands fa-github"></i> Source Code
                   </a>
                 {% endif %}
-                {% if proj.dataset %}
-                  <a href="{{ proj.dataset }}" target="_blank" rel="noopener noreferrer" class="pat-action-btn secondary">
-                    <i class="fa-solid fa-database"></i> Dataset
-                  </a>
-                {% endif %}
+                 for tag in proj.tags %}
+              <span class="pat-lux-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          <h3 class="pat-card-heading">{{ proj.title }}</h3>
+          <p class="pat-card-subheading">{{ proj.summary }}</p>
+        </div>
+        <div class="pat-chevron-bubble">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </button>
+
+      <div class="pat-lux-collapse-body">
+        <div class="pat-collapse-inner">
+          <div class="pat-lux-grid">
+            
+            {% if proj.image %}
+            <div class="pat-media-box">
+              <div class="pat-img-wrapper">
+                <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}" onerror="this.src='https://placehold.co/640x420/0f172a/38bdf8?text=Research+Figure'">
               </div>
+              {% if proj.caption %}
+                <span class="pat-caption"><i class="fa-solid fa-camera"></i> {{ proj.caption }}</span>
               {% endif %}
             </div>
+            {% endif %}
+            
+            <div class="pat-details-box" {% unless proj.image %}style="grid-column: 1 / -1;"{% endunless %}>
+              <h4>Technical Overview & Methodology</h4>
+              <div class="pat-proj-body">
+                {{ proj.description }}
+              </div>
+              
+              {% if proj.paper or proj.code or proj.dataset %}
+              <div class="pat-btn-actions">
+                {% if proj.paper %}
+                  <a href="{{ proj.paper }}" target="_blank" rel="noopener noreferrer" class="pat-action-btn primary">
+                    <i class="fa-solid fa-file-pdf"></i> Read Paper
+                  </a>
+                {% endif %}
+                {% if proj.code %}
+                  <a href="{{ proj.code }}" target="_blank" rel="noopener noreferrer" class="pat-action-btn secondary">
+                    <i class="fa-brands fa-github"></i> Source Code
+                  </a>
+                {% endif %}
+                title: "Echocardiography"
+permalink: /research/echo/
+author_profile: true
 
-          </div>
-        </div>
-      </div>
-    </article>
-    {% endfor %}
-  </div>
+badge_icon: "fa-solid fa-heart-pulse"
+badge_text: "Cardiovascular Ultrasound"
+hero_title: "Echocardiography & Cardiac Strain Imaging"
+hero_desc: "Advancing real-time cardiac ultrasound diagnostics through GPU-accelerated speckle tracking, high-frame-rate plane-wave imaging, and deep learning-based automated view classification."
 
-  <!-- In case page has extra free-form markdown content below the projects -->
-  {% if content %}
-    <div class="pat-page-extra-content" style="margin-top: 3rem;">
-      {{ content }}
-    </div>
-  {% endif %}
-</div>
-
-<!-- CLIENT ACCORDION SCRIPT -->
-<script>
-  function togglePatLuxuryCard(headerBtn) {
-    const card = headerBtn.closest('.pat-lux-card');
-    const isExpanded = card.classList.contains('is-expanded');
-    
-    if (isExpanded) {
-      card.classList.remove('is-expanded');
-      headerBtn.setAttribute('aria-expanded', 'false');
-    } else {
-      card.classList.add('is-expanded');
-      headerBtn.setAttribute('aria-expanded', 'true');
-    }
-    syncButtonStates();
-  }
-
-  const expandBtn = document.getElementById('pat-btn-expand');
-  const collapseBtn = document.getElementById('pat-btn-collapse');
-  const allCards = document.querySelectorAll('.pat-lux-card');
-
-  if (expandBtn && collapseBtn) {
-    expandBtn.addEventListener('click', function() {
-      allCards.forEach(card => {
-        card.classList.add('is-expanded');
-        const btn = card.querySelector('.pat-lux-header');
-        if (btn) btn.setAttribute('aria-expanded', 'true');
-      });
-      expandBtn.classList.add('active');
-      collapseBtn.classList.remove('active');
-    });
-
-    collapseBtn.addEventListener('click', function() {
-      allCards.forEach(card => {
-        card.classList.remove('is-expanded');
-        const btn = card.querySelector('.pat-lux-header');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-      });
-      collapseBtn.classList.add('active');
-      expandBtn.classList.remove('active');
-    });
-  }
-
-  function syncButtonStates() {
-    const openCount = document.querySelectorAll('.pat-lux-card.is-expanded').length;
-    if (!expandBtn || !collapseBtn) return;
-    if (openCount === allCards.length && allCards.length > 0) {
-      expandBtn.classList.add('active');
-      collapseBtn.classList.remove('active');
-    } else if (openCount === 0) {
-      collapseBtn.classList.add('active');
-      expandBtn.classList.remove('active');
-    } else {
-      expandBtn.classList.remove('active');
-      collapseBtn.classList.remove('active');
-    }
-  }
-</script>
+projects:
+  - title: "Automated Left Ventricular Strain & Speckle Tracking"
+    summary: "Real-time 2D Lagrangian strain estimation for ischemic border identification."
+    featured: true
+    tags: 
+      - "Speckle Tracking"
+      - "Myocardial Strain"
+      - "CUDA/C++"
+    image: "/images/research/echo-strain.jpg"
+    caption: "Fig 1. Automated endocardial contouring and segmental longitudinal strain curves."
+    description: "Quantification of regional myocardial mechanics via speckle tracking echocardiography (STE) provides sensitive diagnostic metrics prior to manifest ejection fraction degradation. We developed a high-throughput block-matching algorithm optimized on NVIDIA GPUs that computes global longitudinal strain (GLS) and radial strain tensors at >120 frames per second."
+    paper: "https://doi.org/"
+    code: "https://github.com/soheilhk/EchoApp"
+---
