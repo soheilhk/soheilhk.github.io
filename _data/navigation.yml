@@ -13,22 +13,19 @@ main:
     
   - title: "Research"
     url: /research/
+    children:
       - title: "Photoacoustic Tomography"
         url: /research/pat/
         icon: "fa-solid fa-sun fa-fw"
-
       - title: "Ultrasound Tomography"
         url: /research/usct/
         icon: "fa-solid fa-circle-nodes fa-fw"
-
       - title: "Echocardiography"
         url: /research/echo/
         icon: "fa-solid fa-heart-pulse fa-fw"
-
       - title: "Sonography"
         url: /research/sono/
         icon: "fa-solid fa-wave-square fa-fw"
-
       - title: "Artificial Intelligence"
         url: /research/ai/
         icon: "fa-solid fa-brain fa-fw"
