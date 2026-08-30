@@ -4,8 +4,6 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-      
-
         <ul class="visible-links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
@@ -15,8 +13,8 @@
             {% endif %}
 
             {% if link.children %}
-              <!-- Dropdown Nav Item -->
-              <li class="masthead__menu-item has-dropdown {% if page.url contains link.url and link.url != '/' %}selected active-nav{% endif %}">
+              <!-- Dropdown Item -->
+              <li class="masthead__menu-item has-dropdown {% if page.url contains link.url and link.url != '/' %}active-nav{% endif %}">
                 <a href="{{ domain }}{{ link.url }}" class="dropdown-toggle">
                   {{ link.title }} <span class="dropdown-arrow">▾</span>
                 </a>
@@ -39,8 +37,8 @@
                 </ul>
               </li>
             {% else %}
-              <!-- Normal Nav Item -->
-              <li class="masthead__menu-item {% if page.url == link.url or (link.url != '/' and page.url contains link.url) %}selected active-nav{% endif %}">
+              <!-- Standard Nav Item -->
+              <li class="masthead__menu-item {% if page.url == link.url or (link.url != '/' and page.url contains link.url) %}active-nav{% endif %}">
                 <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
               </li>
             {% endif %}
