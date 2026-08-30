@@ -26,6 +26,13 @@
       </div>
     {% endif %}
 
+    {% if page.authors %}
+      <p class="page__meta" style="margin: 0.2em 0 0.5em 0; font-size: 1em; color: #555;">
+    {{ page.authors }}
+    </p>
+    {% endif %}
+
+
     <h3 class="archive__item-title" itemprop="headline" style="margin-bottom: 0.25em;">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
