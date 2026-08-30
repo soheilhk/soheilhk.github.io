@@ -1,8 +1,8 @@
 ---
 title: "Automated Right Ventricular Strain & Speckle Tracking"
 publications:
-  - 2024-01-01-paper-one-slug
-  - 2023-05-15-paper-two-slug
+  - 2009-10-01-paper-title-number-1
+  - 2009-10-01-paper-title-number-1
 collection: research
 category: pat
 date: 2025-01-01
