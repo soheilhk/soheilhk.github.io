@@ -1,0 +1,180 @@
+---
+layout: single
+---
+
+<div class="pat-luxury-wrapper">
+  
+  <!-- HERO HEADER -->
+  <header class="pat-hero-card">
+    {% if page.badge_text %}
+    <div class="pat-hero-badge">
+      <i class="{{ page.badge_icon | default: 'fa-solid fa-microchip' }}"></i> 
+      <span>{{ page.badge_text }}</span>
+    </div>
+    {% endif %}
+    <h1 class="pat-hero-title">{{ page.hero_title | default: page.title }}</h1>
+    <p class="pat-hero-lead">{{ page.hero_desc }}</p>
+  </header>
+
+  <!-- LUXURY CONTROL TOOLBAR -->
+  <div class="pat-luxury-toolbar">
+    <div class="pat-toolbar-meta">
+      <span class="pat-counter-badge">
+        <i class="fa-solid fa-layer-group"></i> 
+        <strong id="pat-total-count">{{ page.projects.size | default: 0 }}</strong> Projects
+      </span>
+    </div>
+    
+    <!-- Segmented Toggle Pill -->
+    <div class="pat-segmented-control" role="group" aria-label="Accordion View Controls">
+      <button
+              <span class="pat-lux-tag accent"><i class="fa-solid fa-star"></i> Featured</span>
+            {% endif %}
+            {% for tag in proj.tags %}
+              <span class="pat-lux-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          <h3 class="pat-card-heading">{{ proj.title }}</h3>
+          <p class="pat-card-subheading">{{ proj.summary }}</p>
+        </div>
+        <div class="pat-chevron-bubble">
+          <i>
+    </div>
+  </div>
+
+  <!-- PROJECTS ACCORDION LIST -->
+  <div class="pat-accordion-list">
+    {% for proj in page.projects %}
+    <article class="pat-lux-card is-expanded" id="proj-{{ forloop.index }}">
+      <button class="pat-lux-header" aria-expanded="true" onclick="togglePatLuxuryCard(this)">
+        <div class="pat-header-meta">
+          <div class="pat-tag-row">
+            {% if proj.featured %}
+              <span class="pat-lux-tag accent"><i class="fa-solid fa-star"></i> Featured</span>
+            {% endif %}
+            {% for tag in proj.tags %}
+              <span class="pat-lux-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          <h3 class="pat-card-heading">{{ proj.title }}</h3>
+          <p class="pat-card-subheading">{{ proj.summary }}</p>
+        </div>
+        <div class="pat-chevron-bubble">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </button>
+
+      <div class="pat-lux-collapse-body">
+        <div class="pat-collapse-inner">
+          <div class="pat-lux-grid">
+            
+            {% if proj.image %}
+            <div class="pat-media-box">
+              <div class="pat-img-wrapper">
+                <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}" onerror="this.src='https://placehold.co/640x420/0f172a/38bdf8?text=Research+Figure'">
+              </div>
+              {% if proj.caption %}
+                <span class="pat-caption"><i class="fa-solid fa-camera"></i> {{ proj.caption }}</span>
+              {% endif %}
+            </div>
+            {% endif %}
+            
+            <div class="pat-details-box" {% unless proj.image %}style="grid-column: 1 / -1;"{% endunless %}>
+              <h4>Technical Overview & Methodology</h4>
+              <div class="pat-proj-body">
+                {{ proj.body_html | markdownify }}
+              </div>
+              
+              {% if proj.paper or proj.code or proj.dataset %}
+              <div class="pat-btn-actions">
+                {% if proj.paper %}
+                  <a href="{{ proj.paper }}" target="_blank" rel="noopener noreferrer" class="pat-action-btn primary">
+                    <i class="fa-solid fa-file-pdf"></i> Read Paper
+                  </a>
+                {% endif %}
+                {% if proj.code %}
+                  <a href="{{ proj.code }}" target="_blank" rel="noopener noreferrer" class="pat-action-btn secondary">
+                    <i class="fa-brands fa-github"></i> Source Code
+                  </a>
+                {% endif %}
+                {% if proj.dataset %}
+                  <a href="{{ proj.dataset }}" target="_blank" rel="noopener noreferrer" class="pat-action-btn secondary">
+                    <i class="fa-solid fa-database"></i> Dataset
+                  </a>
+                {% endif %}
+              </div>
+              {% endif %}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+
+  <!-- In case page has extra free-form markdown content below the projects -->
+  {% if content %}
+    <div class="pat-page-extra-content" style="margin-top: 3rem;">
+      {{ content }}
+    </div>
+  {% endif %}
+</div>
+
+<!-- CLIENT ACCORDION SCRIPT -->
+<script>
+  function togglePatLuxuryCard(headerBtn) {
+    const card = headerBtn.closest('.pat-lux-card');
+    const isExpanded = card.classList.contains('is-expanded');
+    
+    if (isExpanded) {
+      card.classList.remove('is-expanded');
+      headerBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      card.classList.add('is-expanded');
+      headerBtn.setAttribute('aria-expanded', 'true');
+    }
+    syncButtonStates();
+  }
+
+  const expandBtn = document.getElementById('pat-btn-expand');
+  const collapseBtn = document.getElementById('pat-btn-collapse');
+  const allCards = document.querySelectorAll('.pat-lux-card');
+
+  if (expandBtn && collapseBtn) {
+    expandBtn.addEventListener('click', function() {
+      allCards.forEach(card => {
+        card.classList.add('is-expanded');
+        const btn = card.querySelector('.pat-lux-header');
+        if (btn) btn.setAttribute('aria-expanded', 'true');
+      });
+      expandBtn.classList.add('active');
+      collapseBtn.classList.remove('active');
+    });
+
+    collapseBtn.addEventListener('click', function() {
+      allCards.forEach(card => {
+        card.classList.remove('is-expanded');
+        const btn = card.querySelector('.pat-lux-header');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+      collapseBtn.classList.add('active');
+      expandBtn.classList.remove('active');
+    });
+  }
+
+  function syncButtonStates() {
+    const openCount = document.querySelectorAll('.pat-lux-card.is-expanded').length;
+    if (!expandBtn || !collapseBtn) return;
+    if (openCount === allCards.length && allCards.length > 0) {
+      expandBtn.classList.add('active');
+      collapseBtn.classList.remove('active');
+    } else if (openCount === 0) {
+      collapseBtn.classList.add('active');
+      expandBtn.classList.remove('active');
+    } else {
+      expandBtn.classList.remove('active');
+      collapseBtn.classList.remove('active');
+    }
+  }
+</script>
