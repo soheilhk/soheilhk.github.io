@@ -3,7 +3,7 @@ title: "Blind angle and angular range detection in planar and limited-view geome
 collection: publications
 category: conferences
 permalink: /publication/Conf_IEEE_ICEE2021_Hakakzadeh_et_al_blind
-authors: 'S. Hakakzadeh and Z. Kavehvash'
+authors: "S. Hakakzadeh and Z. Kavehvash"
 excerpt: 'We formulate the exact mathematical dependence between transducer positioning and image fidelity across 2D PACT geometries, defining the “blind angle” mechanism governing limited-view reconstruction artifacts.'
 date: 2021-02-17
 venue: '2021 29th Iranian Conference on Electrical Engineering (ICEE)'
