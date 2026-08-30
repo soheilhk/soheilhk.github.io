@@ -3,7 +3,7 @@ title: "Finite Transducer Size Compensation in Two-Dimensional Photoacoustic Com
 collection: publications
 category: conferences
 permalink: /publication/Conf_IEEE_IUS2021_Hakakzadeh_et_al_finite
-authors: "S. Hakakzadeh, M. Mozaffarzadeh, M. Mostafavi, M. Amjadian, Z. Kavehvash, M. Verweij, N. Jong"
+authors: "S. Hakakzadeh, M. Mozaffarzadeh, M. Mostafavi, Z. Kavehvash, P. Rajendran, M. Verweij, N. Jong, M. Paramanik"
 excerpt: "Overcoming spatial acceptance-angle limits in C-PACT via compound orbital-axial transducer rotation—synthesizing wide-angle virtual elements to eliminate off-center tangential blurring with 90% resolution gain."
 date: 2021-9-11
 venue: '2021 IEEE International Ultrasonics Symposium (IUS)'
