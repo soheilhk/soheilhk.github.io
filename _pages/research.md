@@ -132,7 +132,7 @@ author_profile: false
       <!-- Sonography -->
 
       <a class="research-card"
-         href="/research/sonography/">
+         href="/research/sono/">
 
         <div class="research-card-image">
           <img
