@@ -1,131 +1,67 @@
-```liquid
 {% include base_path %}
 
 <div class="masthead">
-
   <div class="masthead__inner-wrap">
-
     <div class="masthead__menu">
-
       <nav id="site-nav" class="greedy-nav">
-
-        <button>
-          <span class="navicon"></span>
-        </button>
+        
+        <!-- Left Brand: Name + Subtitle -->
+        <a class="site-title" href="{{ base_path }}/">
+          <span class="site-title-main">SOHEIL HK</span>
+          <span class="site-title-sub">Ultrasound Imaging Researcher</span>
+        </a>
 
         <ul class="visible-links">
-
-          <!-- Site title -->
-
-          <li class="masthead__menu-item masthead__menu-item--lg persist
-            {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-
-            <a href="{{ base_path }}/">
-              {{ site.title }}
-            </a>
-
-          </li>
-
-
-          <!-- Main navigation -->
-
           {% for link in site.data.navigation.main %}
-
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
 
-
             {% if link.children %}
-
-              <!-- Navigation item with dropdown -->
-
-              <li class="masthead__menu-item has-dropdown
-                {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-
+              <!-- Dropdown Nav Item -->
+              <li class="masthead__menu-item has-dropdown {% if page.url contains link.url and link.url != '/' %}selected active-nav{% endif %}">
                 <a href="{{ domain }}{{ link.url }}" class="dropdown-toggle">
-
-                  {{ link.title }}
-
-                  <span class="dropdown-arrow">⌄</span>
-
+                  {{ link.title }} <span class="dropdown-arrow">▾</span>
                 </a>
-
-
                 <ul class="dropdown-menu">
-
                   {% for child in link.children %}
-
                     {% if child.url contains 'http' %}
                       {% assign child_domain = '' %}
                     {% else %}
                       {% assign child_domain = base_path %}
                     {% endif %}
-
-                    <li>
-
+                    <li class="dropdown-item">
                       <a href="{{ child_domain }}{{ child.url }}">
-
-                        {{ child.title }}
-
+                        {% if child.icon %}
+                          <span class="dropdown-icon"><i class="{{ child.icon }}"></i></span>
+                        {% endif %}
+                        <span class="dropdown-label">{{ child.title }}</span>
                       </a>
-
                     </li>
-
                   {% endfor %}
-
                 </ul>
-
               </li>
-
-
             {% else %}
-
-              <!-- Normal navigation item -->
-
-              <li class="masthead__menu-item
-                {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-
-                <a href="{{ domain }}{{ link.url }}">
-                  {{ link.title }}
-                </a>
-
+              <!-- Normal Nav Item -->
+              <li class="masthead__menu-item {% if page.url == link.url or (link.url != '/' and page.url contains link.url) %}selected active-nav{% endif %}">
+                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
               </li>
-
             {% endif %}
-
           {% endfor %}
 
-
           <!-- Theme toggle -->
-
-          <li id="theme-toggle"
-              class="masthead__menu-item persist tail">
-
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon">
-
-              <i id="theme-icon"
-                 class="fa-solid fa-sun"
-                 aria-hidden="true"
-                 title="toggle theme">
-              </i>
-
+              <i id="theme-icon" class="fa-regular fa-moon" aria-hidden="true" title="toggle theme"></i>
             </a>
-
           </li>
-
         </ul>
 
-
+        <button><div class="navicon"></div></button>
         <ul class="hidden-links hidden"></ul>
-
       </nav>
-
     </div>
-
   </div>
-
 </div>
-```
