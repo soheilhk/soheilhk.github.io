@@ -23,7 +23,7 @@ projects:
       Quantification of regional myocardial mechanics via speckle tracking echocardiography (STE) provides sensitive diagnostic metrics prior to manifest ejection fraction degradation.
       
       We developed a high-throughput block-matching algorithm optimized on NVIDIA Tensor Cores that computes global longitudinal strain (GLS) and radial strain tensors at >120 frames per second. The pipeline incorporates an elastographic quality metric to eliminate decorrelated out-of-plane tracking artifacts.
-    paper: "https://doi.org/your-doi-link-here"
+    paper: "https://doi.org/"
     code: "https://github.com/soheilhk/EchoApp"
 
   - title: "Deep Learning for Standard Echocardiographic View Classification"
@@ -36,6 +36,6 @@ projects:
     caption: "Fig 2. Spatio-temporal ResNet-3D architecture for 8-view classification."
     body_html: |
       Point-of-care cardiac ultrasound (POCUS) adoption is hindered by high operator dependency. We designed a lightweight spatio-temporal deep network capable of classifying standard views (A2C, A4C, PLAX, PSAX) in B-mode video cineloops in real-time on edge compute units.
-    paper: "https://doi.org/your-doi-link-here"
+    paper: "https://doi.org/"
     code: "https://github.com/soheilhk"
 ---
