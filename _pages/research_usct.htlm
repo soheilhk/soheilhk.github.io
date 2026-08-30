@@ -1,0 +1,19 @@
+---
+layout: archive
+title: "Ultrasound Computed Tomography (USCT)"
+permalink: /research/usct/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="page__lead">
+  Developing next-generation quantitative 3D ultrasound tomography systems, focusing on ring-array reflection beamforming, full-waveform inversion (FWI), speed-of-sound reconstruction, and high-resolution synthetic aperture architectures for early breast cancer and soft-tissue imaging.
+</p>
+
+<!-- Renders list of all USCT projects/papers -->
+{% for post in site.research reversed %}
+  {% if post.category == "usct" %}
+    {% include research-card.html %}
+  {% endif %}
+{% endfor %}
