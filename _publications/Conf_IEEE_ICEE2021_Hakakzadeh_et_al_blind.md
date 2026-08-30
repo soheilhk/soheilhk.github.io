@@ -7,6 +7,7 @@ excerpt: 'We formulate the exact mathematical dependence between transducer posi
 date: 2021-02-17
 venue: '2021 29th Iranian Conference on Electrical Engineering (ICEE)'
 paperurl: 'https://github.com/soheilhk/soheilhk.github.io/blob/master/files/publications/Conf_IEEE_ICEE2021_Hakakzadeh_et_al_blind.pdf'
+publisherurl: 'https://ieeexplore.ieee.org/abstract/document/9544114'
 citation: 'S. Hakakzadeh and Z. Kavehvash, "Blind Angle and Angular Range Detection in Planar and Limited-View Geometries for Photoacoustic Tomography," 2021 29th Iranian Conference on Electrical Engineering (ICEE), Tehran, Iran, Islamic Republic of, 2021, pp. 922-926, doi: 10.1109/ICEE52715.2021.9544114.'
 ---
 
