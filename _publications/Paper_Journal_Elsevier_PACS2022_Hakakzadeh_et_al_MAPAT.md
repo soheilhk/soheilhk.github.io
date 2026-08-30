@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/Paper_Journal_Elsevier_PACS2022_Hakakzadeh_et_al_MAPAT
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
+date: 2022-9-1
 venue: 'Journal Photoacoustics'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 paperurl: 'files/publications/Conf_IEEE_IUS2021_Hakakzadeh_et_al_finite.pdf'
