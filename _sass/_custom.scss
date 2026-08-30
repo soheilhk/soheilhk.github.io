@@ -1,5 +1,5 @@
 /* ==========================================================
-   1. SLIM NAVBAR HEIGHT & STRUCTURE
+   1. ULTRA-SLIM MASTHEAD (NO BRANDING, SINGLE ROW)
    ========================================================== */
 .masthead,
 .masthead__inner-wrap,
@@ -14,35 +14,39 @@
   z-index: 1000;
   background-color: #ffffff;
   border-bottom: 1px solid #eef2f6;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .masthead__inner-wrap {
-  max-width: 1280px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 20px; /* Reduced vertical padding */
+  padding: 0 20px !important;
 }
 
-.greedy-nav.custom-navbar,
 .greedy-nav {
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
-  min-height: 48px !important; /* Reduced from 72px to 48px */
-  height: 48px !important;     /* Locks the height */
+  justify-content: center !important; /* Centers the links across the page */
+  height: 46px !important;            /* Clean, slim height */
+  min-height: 46px !important;
   background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* ==========================================================
-   3. TOP NAVIGATION LINKS & ACTIVE INDICATOR
+   2. TOP NAVIGATION LINKS & ACTIVE TAB UNDERLINE
    ========================================================== */
 .greedy-nav .visible-links {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
 }
 
 .masthead__menu-item {
@@ -52,30 +56,31 @@
 }
 
 .masthead__menu-item a {
-  display: inline-block;
-  padding: 10px 14px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #334155;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
+  display: inline-flex !important;
+  align-items: center;
+  padding: 10px 10px !important;
+  font-size: 0.92rem !important;
+  font-weight: 500 !important;
+  color: #334155 !important;
+  text-decoration: none !important;
+  border-bottom: 2px solid transparent !important;
   transition: all 0.2s ease;
 }
 
 .masthead__menu-item a:hover {
-  color: #0a2540;
+  color: #0b192c !important;
 }
 
-/* Active bottom underline indicator */
+/* Active tab underline */
 .masthead__menu-item.active-nav > a,
 .masthead__menu-item.selected > a {
-  color: #0a2540 !important;
+  color: #0b192c !important;
   font-weight: 600 !important;
-  border-bottom: 2.5px solid #0a2540 !important;
+  border-bottom: 2px solid #0b192c !important;
 }
 
 /* ==========================================================
-   4. MODERN FLOATING DROPDOWN CARD
+   3. MODERN FLOATING DROPDOWN CARD
    ========================================================== */
 .masthead__menu-item.has-dropdown {
   position: relative !important;
@@ -83,36 +88,36 @@
 
 .dropdown-arrow {
   display: inline-block;
-  font-size: 0.7em;
-  margin-left: 4px;
+  font-size: 0.70em;
+  margin-left: 5px;
   color: #64748b;
   transition: transform 0.2s ease;
 }
 
 .masthead__menu-item.has-dropdown:hover .dropdown-arrow {
   transform: rotate(180deg);
-  color: #0a2540;
+  color: #0b192c;
 }
 
-/* The Dropdown Menu Box */
+/* Dropdown Container */
 .masthead__menu-item.has-dropdown ul.dropdown-menu {
   display: none !important;
   position: absolute !important;
-  top: calc(100% + 4px) !important;
+  top: calc(100% + 2px) !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  min-width: 270px !important;
+  min-width: 260px !important;
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 12px !important;
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.04) !important;
-  padding: 10px !important;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12), 0 4px 12px rgba(15, 23, 42, 0.04) !important;
+  padding: 8px !important;
   margin: 0 !important;
   list-style: none !important;
   z-index: 99999 !important;
 }
 
-/* Hover reveal */
+/* Dropdown hover animation */
 .masthead__menu-item.has-dropdown:hover > ul.dropdown-menu {
   display: flex !important;
   flex-direction: column !important;
@@ -130,7 +135,7 @@
   }
 }
 
-/* Individual Dropdown Item */
+/* Dropdown items */
 .masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item {
   display: block !important;
   width: 100% !important;
@@ -151,17 +156,17 @@
 }
 
 .masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item a:hover {
-  background-color: #f8fafc !important;
+  background-color: #f1f5f9 !important;
   color: #0284c7 !important;
 }
 
-/* Dropdown Icon Styling */
+/* Dropdown icons */
 .dropdown-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 20px;
-  color: #475569;
+  color: #64748b;
   font-size: 0.95rem;
 }
 
@@ -169,7 +174,7 @@
   color: #0284c7;
 }
 
-/* Top invisible bridge to prevent hover loss */
+/* Invisible bridge for mouse travel */
 .masthead__menu-item.has-dropdown ul.dropdown-menu::before {
   content: "";
   position: absolute;
