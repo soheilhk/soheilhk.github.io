@@ -1,5 +1,5 @@
 ---
-title: "Blind angle and angular range detection in planar and limited-view geometries for photoacoustic tomography"
+title: "Image Quality Equations for Focused Transducer in Circular Photoacoustic Computed Tomography"
 collection: publications
 category: conferences
 permalink: /publication/Conf_IEEE_ICEE2021_Hakakzadeh_et_al_focus
