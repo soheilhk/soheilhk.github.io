@@ -136,23 +136,28 @@
 }
 
 /* Dropdown items */
-.masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item {
-  display: block !important;
-  width: 100% !important;
-  margin: 2px 0 !important;
-}
-
+/* Ensure all dropdown list items use clean flexbox alignment */
 .masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item a {
   display: flex !important;
   align-items: center !important;
-  gap: 12px !important;
-  padding: 9px 12px !important;
-  border-radius: 8px !important;
-  font-size: 0.88rem !important;
-  font-weight: 500 !important;
-  color: #1e293b !important;
-  border-bottom: none !important;
-  transition: background-color 0.15s ease, color 0.15s ease !important;
+  gap: 10px !important;
+  padding: 10px 16px !important;
+  white-space: nowrap !important; /* Prevents awkward line-breaks */
+  text-align: left !important;
+}
+
+/* Force every icon to have an identical fixed width and centered alignment */
+.masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item a i.dropdown-icon,
+.masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item a i {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;       /* Fixed optical column width */
+  min-width: 20px !important;   /* Prevents shrinking */
+  text-align: center !important;
+  font-size: 0.95rem !important;
+  margin-right: 0 !important;   /* Gap handles the spacing evenly */
+  flex-shrink: 0 !important;
 }
 
 .masthead__menu-item.has-dropdown ul.dropdown-menu li.dropdown-item a:hover {
