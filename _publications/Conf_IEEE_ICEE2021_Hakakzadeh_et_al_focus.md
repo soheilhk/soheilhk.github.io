@@ -3,7 +3,7 @@ title: "Image Quality Equations for Focused Transducer in Circular Photoacoustic
 collection: publications
 category: conferences
 permalink: /publication/Conf_IEEE_ICEE2021_Hakakzadeh_et_al_focus
-authors: 'S. Hakakzadeh and Z. Kavehvash'
+authors: "S. Hakakzadeh and Z. Kavehvash"
 excerpt: "Presents an analytical framework for circular PACT systems with focused transducers (positive/negative focus) to map angular blind spots and partition the imaging chamber into distinct resolution zones. Provides closed-form formulations to evaluate optimal imaging range and guide transducer geometry design."
 date: 2021-02-17
 venue: '2021 29th Iranian Conference on Electrical Engineering (ICEE)'
