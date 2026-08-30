@@ -9,7 +9,7 @@ date: 2021-9-11
 venue: '2021 IEEE International Ultrasonics Symposium (IUS)'
 paperurl: 'files/publications/Conf_IEEE_IUS2021_Hakakzadeh_et_al_finite.pdf'
 publisherurl: 'https://ieeexplore.ieee.org/abstract/document/9593757'
-citation: 'S. Hakakzadeh et al., "Finite Transducer Size Compensation in Two-Dimensional Photoacoustic Computed Tomography," 2021 IEEE International Ultrasonics Symposium (IUS), Xi'an, China, 2021, pp. 1-3, doi: 10.1109/IUS52206.2021.9593757.'
+citation: 'S. Hakakzadeh et al., "Finite Transducer Size Compensation in Two-Dimensional Photoacoustic Computed Tomography," 2021 IEEE International Ultrasonics Symposium (IUS), Xian, China, 2021, pp. 1-3, doi: 10.1109/IUS52206.2021.9593757.'
 ---
 
 Abstract:
