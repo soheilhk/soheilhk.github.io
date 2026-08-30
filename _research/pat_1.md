@@ -8,7 +8,8 @@ category: pat
 date: 2021-07-01
 venue: "PACT Project / PACT Analysis"
 excerpt: "Formulation of closed-form image quality equations to delineate spatial resolution zones and quantify blind spot angles for positive/negative focus transducers in circular PACT."
-image: "/images/research/echo-strain.jpg"
+image: "images/research/pat/pat1.PNG"
+
 image_caption: "Derenzo phantom and image reconstructed with limited-view and 
 full-view circular transducers geometry. (a) Derenzo phantom and full-view 
 circular transducers geometry. (b) Derenzo phantom and limited-view 
