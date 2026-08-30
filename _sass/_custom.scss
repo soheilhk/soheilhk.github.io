@@ -497,5 +497,22 @@
   }
 
 }
+
+
+/* Prevent greedy-nav from clipping absolute dropdown menus */
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav,
+.greedy-nav .visible-links {
+  overflow: visible !important;
+}
+
+/* Ensure the navbar wrapper stays above page hero/content */
+.masthead {
+  position: relative;
+  z-index: 1000;
+}
+
 ```
 
