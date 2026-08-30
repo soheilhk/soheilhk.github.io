@@ -1,6 +1,5 @@
 ---
 permalink: /research/
-title: "Research"
 author_profile: false
 ---
 
@@ -10,7 +9,6 @@ author_profile: false
 
     <div class="research-intro-text">
 
-      <h1>Research</h1>
 
       <div class="research-accent"></div>
 
