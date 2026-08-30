@@ -3,8 +3,9 @@ title: "Multi-angle data acquisition to compensate transducer finite size in pho
 collection: publications
 category: manuscripts
 permalink: /publication/Paper_Journal_Elsevier_PACS2022_Hakakzadeh_et_al_MAPAT
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+excerpt: 'Overcoming spatial acceptance-angle limits in C-PACT via compound orbital-axial transducer rotation—synthesizing wide-angle virtual elements to eliminate off-center tangential blurring with 90% resolution gain.'
 date: 2022-9-1
+authors: "S. Hakakzadeh, M. Mozaffarzadeh, M. Mostafavi, M. Amjadian, Z. Kavehvash, M. Verweij, N. Jong"
 venue: 'Journal Photoacoustics'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 paperurl: 'files/publications/Conf_IEEE_IUS2021_Hakakzadeh_et_al_finite.pdf'
