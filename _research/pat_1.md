@@ -1,5 +1,5 @@
 ---
-title: "Focused Transducer Resolution & Zone Analysis in Circular PACT"
+title: "Geometric Modeling, Blind-Angle Analysis & Image Quality Limits in 2D PACT"
 publications:
   - Conf_IEEE_ICEE2021_Hakakzadeh_et_al_blind
   - Conf_IEEE_ICEE2021_Hakakzadeh_et_al_focus
@@ -7,7 +7,7 @@ collection: research
 category: pat
 date: 2021-07-01
 venue: "PACT Project / PACT Analysis"
-excerpt: "Formulation of closed-form image quality equations to delineate spatial resolution zones and quantify blind spot angles for positive/negative focus transducers in circular PACT."
+excerpt: "Closed-form analytical frameworks for evaluating spatial resolution zones, acoustic blind spots, and limited-view artifacts across circular, planar, and focused-transducer PACT geometries."
 image: "images/research/pat/pat1.PNG"
 
 image_caption: "Derenzo phantom and image reconstructed with limited-view and 
