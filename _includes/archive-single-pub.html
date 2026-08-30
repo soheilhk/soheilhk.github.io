@@ -26,13 +26,6 @@
       </div>
     {% endif %}
 
-    {% if post.authors %}
-      <p class="page__meta" style="margin: 0.2em 0 0.5em 0; font-size: 1em; color: #555;">
-    {{ post.authors }}
-    </p>
-    {% endif %}
-
-
     <h3 class="archive__item-title" itemprop="headline" style="margin-bottom: 0.25em;">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -40,6 +33,12 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.authors }}</p> {% endif %}
+    </li>
+    
 
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
