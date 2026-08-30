@@ -66,7 +66,7 @@ author_profile: false
       <!-- Ultrasound Tomography -->
 
       <a class="research-card"
-         href="/research/ultrasound-tomography/">
+         href="/research/usct/">
 
         <div class="research-card-image">
           <img
@@ -99,7 +99,7 @@ author_profile: false
       <!-- Echocardiography -->
 
       <a class="research-card"
-         href="/research/echocardiography/">
+         href="/research/echo/">
 
         <div class="research-card-image">
           <img
