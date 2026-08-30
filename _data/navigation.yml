@@ -10,8 +10,8 @@
 main:
   - title: "Home"
     url: /
-
-   - title: "Research"
+    
+  - title: "Research"
     url: /research/
     children:
       - title: "Photoacoustic Tomography"
@@ -23,7 +23,7 @@ main:
       - title: "Echocardiography"
         url: /research/echocardiography/
 
-      - title: "Ultrasound Imaging"
+      - title: "Sonography"
         url: /research/sonography/
 
       - title: "AI"
