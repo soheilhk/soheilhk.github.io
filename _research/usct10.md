@@ -7,7 +7,7 @@ category: usct
 date: 2026-09-01
 venue: "Ring-Array / Beamforming"
 excerpt: "Deriving an analytical transmit sparsification bound for ring-array USCT based on Rayleigh scattering and transducer directivity, optimizing frame rates while avoiding off-center resolution degradation in phantom and in-vivo scans."
-image: "images/research/usct/usct10.PNG"
+image: "images/research/usct/ruct10.PNG"
 image_caption:
 expanded: true
 ---
