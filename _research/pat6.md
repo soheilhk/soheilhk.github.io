@@ -1,5 +1,5 @@
 ---
-title: "excerpt: "Advanced Signal Restoration & Reconstruction for Limited-View and Bandwidth-Constrained PAI"
+title: "Advanced Signal Restoration & Reconstruction for Limited-View and Bandwidth-Constrained PAI"
 publications:
   - Conf_IEEE_IUS2022_Hakakzadeh_et_al_Unipolar
   - Paper_Journal_OPTICA_BOE2023_Hakakzadeh_et_al_Signal
