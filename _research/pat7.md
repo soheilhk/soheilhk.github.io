@@ -8,7 +8,7 @@ category: pat
 date: 2022-12-01
 venue: "Ring-Array / Sparse Array & Artifact Suppression"
 excerpt: "Overcoming the Nyquist-sampling bottleneck in circular PACT via a novel spatial-domain factor, combining edge-detection and statistical filtering to mitigate streak artifacts in low-cost, sparse-detector architectures."
-image: "images/research/pat/pat4.PNG"
+image: "images/research/pat/pat7.PNG"
 image_caption: "Figure 1:   The experimental results of the leaf phantom. (b1-b3) are the recon
 structed image with the conventional back-projection method. (c1-c3) are the
 reconstructed image with the proposed method. (d) and (e) are the reconstructed
