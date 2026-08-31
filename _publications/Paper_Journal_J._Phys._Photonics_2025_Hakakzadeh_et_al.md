@@ -1,16 +1,16 @@
 ---
-title: "Signal restoration algorithm for photoacoustic imaging systems"
+title: "Enhancing image quality in circular-view photoacoustic tomography using randomized detection points"
 collection: publications
 category: manuscripts
 permalink: /publication/Paper_Journal_J._Phys._Photonics_2025_Hakakzadeh_et_al
 excerpt: "Enabling low-cost, sparse-aperture full-ring PAI via spatial-domain artifact suppression—eliminating spatial undersampling streak artifacts with 1/5th the Nyquist channel count and achieving a 38.6 dB CNR boost."
 date: 2022-12-19
-authors: "S Hakakzadeh, M Amjadian, Y Zhang, SM Mostafavi, Z Kavehvash, L. Wang"
+authors: "S Hakakzadeh, P Rajendran, Z Kavehvash, M Pramanik"
 venue: 'Biomedical Optics Express'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 paperurl: 'files/publications/Paper_Journal_J._Phys._Photonics_2025_Hakakzadeh_et_al.pdf'
-publisherurl: 'https://opg.optica.org/boe/fulltext.cfm?uri=boe-14-2-651'
-citation: 'S. Hakakzadeh et al, "Signal restoration algorithm for photoacoustic imaging systems," Biomed. Opt. Express 14, 651-666 (2023)'
+publisherurl: 'https://iopscience.iop.org/article/10.1088/2515-7647/ad9b83/meta'
+citation: 'S. Hakakzadeh et al, "Enhancing image quality in circular-view photoacoustic tomography using randomized detection points." Journal of Physics: Photonics 7.1 (2025): 015006.'
 ---
 Abstract
-In a photoacoustic (PA) imaging system, the detectors are bandwidth-limited. Therefore, they capture PA signals with some unwanted ripples. This limitation degrades the resolution/contrast and induces sidelobes and artifacts in the reconstructed images along the axial direction. To compensate for the limited bandwidth effect, we present a PA signal restoration algorithm, where a mask is designed to extract the signals at the absorber positions and remove the unwanted ripples. This restoration improves the axial resolution and contrast in the reconstructed image. The restored PA signals can be considered as the input of the conventional reconstruction algorithms (e.g., Delay-and-sum (DAS) and Delay-multiply-and-sum (DMAS)). To compare the performance of the proposed method, DAS and DMAS reconstruction algorithms were performed with both the initial and restored PA signals on numerical and experimental studies (numerical targets, tungsten wires, and human forearm). The results show that, compared with the initial PA signals, the restored PA signals can improve the axial resolution and contrast by 45% and 16.1 dB, respectively, and suppress background artifacts by 80%.
+Circular-view (circular scan) photoacoustic computed tomography (PACT) with low-density detection points (DPs) is an efficient, high-speed, and inexpensive modality with numerous (pre-) clinical applications. However, as the number of DPs decreases (decrease in A-lines), some unwanted streak artifacts appear in the reconstructed PACT image. Here, we present an approach to address the mentioned challenge and enhance image contrast. In this method, several low-resolution-images (LRIs) are reconstructed by employing a few DPs’ data with randomized locations. These LRIs are used in computing an artifact score matrix (ASM) to identify the location of artifacts. Three numerical (two vasculatures and human brain), two experimental (triangle and complex leaf), and an in vivo (a rat brain) studies were conducted to evaluate the efficacy of the proposed method (applying the computed ASM to the final reconstructed PA image). Our findings show that the proposed method outperforms conventional methods and offers better image quality. The signal-to-noise ratio and structural similarity index values of the proposed method are quantitatively 20 dB and 25% better than the conventional method, respectively. Furthermore, compared to the conventional method, the proposed method has an artifact standard deviation that is 50 times lower.
