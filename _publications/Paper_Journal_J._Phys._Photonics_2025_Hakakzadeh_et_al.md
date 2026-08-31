@@ -2,11 +2,11 @@
 title: "Enhancing image quality in circular-view photoacoustic tomography using randomized detection points"
 collection: publications
 category: manuscripts
-permalink: /publication/Paper_Journal_J._Phys._Photonics_2025_Hakakzadeh_et_al
+permalink: /publication/Paper_Journal_J_Phys_Photonics_2025_Hakakzadeh_et_al
 excerpt: "Enabling low-cost, sparse-aperture full-ring PAI via spatial-domain artifact suppression—eliminating spatial undersampling streak artifacts with 1/5th the Nyquist channel count and achieving a 38.6 dB CNR boost."
-date: 2022-12-19
+date: 2025-1-31
 authors: "S Hakakzadeh, P Rajendran, Z Kavehvash, M Pramanik"
-venue: 'Biomedical Optics Express'
+venue: 'Journal of Physics: Photonics'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 paperurl: 'files/publications/Paper_Journal_J._Phys._Photonics_2025_Hakakzadeh_et_al.pdf'
 publisherurl: 'https://iopscience.iop.org/article/10.1088/2515-7647/ad9b83/meta'
