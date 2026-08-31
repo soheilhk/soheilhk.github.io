@@ -1,5 +1,6 @@
 ---
-title: "Minimum Transmit Sampling for Resolution Preservation in Ultrasound Tomography (Under Review)"
+title: "Channel-Based Data-Subset Stability for Contrast Enhancement in 
+Carotid Ultrasound (Under Review)"
 collection: publications
 category: conferences
 permalink: /publication/Conf_SPIE_MI2027_Hakakzadeh_et_al_SLCarotid
