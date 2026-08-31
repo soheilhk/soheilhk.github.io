@@ -7,7 +7,7 @@ category: usct
 date: 2025-09-01
 venue: "Ring-Array / Beamforming"
 excerpt: "A novel receive apodization framework for large-aperture SA-RUCT that mitigates diffraction, phase distortion, and grating lobes—delivering up to ~60% spatial resolution improvement and superior PSNR in phantom and in-vivo reconstructions."
-image: "images/research/usct/usct11.PNG"
+image: "images/research/usct/ruct11.PNG"
 image_caption: "Comparison of experimental and in-vivo imaging results using the 
 conventional method and the proposed apodization technique. (a1, a2) 
 Experimental images show artifact suppression and improved feature 
