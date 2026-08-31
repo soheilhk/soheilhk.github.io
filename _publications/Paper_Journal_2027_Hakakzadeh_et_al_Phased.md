@@ -6,11 +6,11 @@ permalink: /publication/Paper_Journal_2027_Hakakzadeh_et_al_Phased
 excerpt: "A phased-array transmit compounding framework using multi-element sub-apertures with dynamic beam steering ($\\pm 20^\\circ, \\pm 10^\\circ, 0^\\circ$), achieving up to +11 dB SNR and +18 dB CNR enhancements across the entire field of view."
 date: 2027-01-01
 authors: "S Hakakzadeh, M Mehrmohammadi"
-venue: 
-slidesurl: 
-paperurl: 
-publisherurl: 
-citation: 
+venue: ''
+slidesurl: '' 
+paperurl: ''
+publisherurl: '' 
+citation: ''
 ---
 Abstract
 This work introduces a phased-array 
