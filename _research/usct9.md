@@ -1,0 +1,62 @@
+---
+title: "Phased-Array Transmit Compounding for Ring-Array RUCT Systems"
+publications:
+  - Conf_IEEE_IUS2024_Hakakzadeh_et_al_Phased
+  - Paper_Journal_2027_Hakakzadeh_et_al_Phased
+collection: research
+category: usct
+date: 2026-09-01
+venue: "Ring-Array / Beamforming"
+excerpt: "A phased-array transmit compounding framework using multi-element sub-apertures with dynamic beam steering ($\\pm 20^\\circ, \\pm 10^\\circ, 0^\\circ$), achieving up to +11 dB SNR and +18 dB CNR enhancements across the entire field of view."
+image: "images/research/usct/ruct9.PNG"
+image_caption: "Comparison of RUCT imaging techniques using different transmission methods. Top Row (b1-b3): RUCT images obtained using a point target 
+phantom. (b1) Image produced by conventional single-element transmission. (b2) Image produced by five consecutive transmit elements (TEs) with zero 
+steering angle, resulting in improved contrast near the center of the field of view (FOV). (b3) Image generated using the proposed method with five 
+consecutive TEs and beam steering at angles of ±20°, ±10°, and 0°, achieving high contrast throughout the FOV. Bottom Row (c1-c4): RUCT images 
+obtained using a complex phantom. (c1) Ground-truth image of the phantom. (c2) Image produced by conventional single-element transmission, showing 
+significant blurring and loss of detail. (c3) Image produced by five consecutive TEs with zero steering angle, showing improved detail at the center but 
+degradation in off-center regions. (c4) Image generated using the proposed method with beam steering, which maintains high contrast and detail across 
+the entire FOV, closely resembling the ground-truth. "
+expanded: true
+---
+
+
+### Overview & Motivation
+Conventional synthetic aperture Reflection Ultrasound Computed Tomography (SA-RUCT) relies on sequential single-element acoustic transmissions. While conceptually straightforward, single-element sonication delivers very low acoustic pressure into the medium, leading to:
+- **Low Acoustic SNR & CNR:** Weak scattered echoes that are easily overwhelmed by electronic and acoustic background noise, especially in deep or dense tissue regions.
+- **Peripheral Signal Decay:** Rapid drop in acoustic illumination at off-center locations due to limited element directivity.
+
+To overcome the acoustic energy deficit of single-element excitation without losing full-view coverage, this work introduces a **multi-element phased-array transmit compounding strategy** with multi-angle beam steering for ring-array RUCT.
+
+---
+
+### Key Technical Details & Methodology
+
+- **Multi-Element Sub-Aperture Transmission:**
+  - Emits synchronized acoustic pulses from adjacent multi-element groups (e.g., $5$ consecutive Transmit Elements [TEs]) rather than isolated single elements, generating a high-energy acoustic main lobe with significantly increased focal pressure.
+- **Dynamic Transmit Beam Steering & Compounding:**
+  - Implements predefined acoustic time delays (TDs) across the active sub-aperture elements to steer the acoustic beam across multiple discrete angular paths ($\theta_{\text{steer}} \in \{-20^\circ, -10^\circ, 0^\circ, +10^\circ, +20^\circ\}$).
+  - Distributes acoustic energy uniformly across both central and peripheral zones of the Field of View (FOV).
+- **Envelope-Enhanced Coherent Reconstruction:**
+  - Multi-angle steered transmissions are beamformed via coherent synthetic aperture Delay-and-Sum (DAS) followed by an analytic Hilbert transform envelope detector to maximize edge definition and boundary contrast.
+- **Simulation Environment:**
+  - Modeled using the $k$-Wave full-wave acoustic simulation framework: $128$-element circular array, radius $R = 40\text{ mm}$, $f_c = 2\text{ MHz}$ ($2$-cycle tone burst), with $30$ active receiver elements per transmit firing sampled at $25\text{ MHz}$.
+
+---
+
+### Quantitative Performance & Metric Improvements
+
+| Metric / Parameter | Conventional Single-Tx | 5-Tx Sub-Aperture (Unsteered) | Proposed 5-Tx Steered Compounding | Total Gain vs. Baseline |
+| :--- | :---: | :---: | :---: | :---: |
+| **Center Target CNR** | $28\text{ dB}$ | $46\text{ dB}$ | **$46\text{ dB}$** | **$+18\text{ dB}$** |
+| **Off-Center Target CNR** | $21\text{ dB}$ | $16\text{ dB}$ | **$39\text{ dB}$** | **$+18\text{ dB}$** |
+| **Center Target SNR** | $34\text{ dB}$ | $41\text{ dB}$ | **$40\text{ dB}$** | **$+6\text{ dB}$** |
+| **Off-Center Target SNR** | $19\text{ dB}$ | $11\text{ dB}$ | **$30\text{ dB}$** | **$+11\text{ dB}$** |
+| **Spatial Energy Homogeneity** | Non-uniform | Centrally confined | **Uniform across full FOV** | **Robust peripheral imaging** |
+
+---
+
+### Key Advantages & Impact
+- **Elimination of Off-Center Blind Spots:** Solves the classic problem in multi-element synthetic transmit where central SNR improves at the direct expense of severe peripheral signal degradation.
+- **High-Contrast Harmonic Imaging Potential:** High acoustic pressure levels generated by multi-element transmit facilitate non-linear harmonic tissue imaging in ring-array configurations.
+- **Translational Feasibility:** Directly adapts beam-steering principles from clinical echocardiography to tomographic ring-array geometries without altering standard transducer hardware layouts.
