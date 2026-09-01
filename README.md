@@ -1,12 +1,12 @@
-
+#
 tabs and list of childeren - > data/navogation
-
+#
 pages of each page -> _pages
-
+#
 publications (title, abstrct, year) -> _publication
-
+#
 figures and images (image/fgure)
-
+#
 
 
 You should now be able to access the website from `localhost:4000`.
