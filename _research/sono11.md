@@ -1,5 +1,5 @@
 ---
-title: "Phased-Array Transmit Compounding for Ring-Array RUCT Systems"
+title: "DSS Scan-line Based Framework for Carotid Ultrasound Imaging"
 publications:
   - Conf_SPIE_MI2027_Hakakzadeh_et_al_SLCarotid
 collection: research
