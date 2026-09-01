@@ -4,7 +4,7 @@ collection: teaching
 type: "Graduate Course"
 permalink: /teaching/Course17_MI
 venue: "University of Tehran, Biomedical Engineering Department"
-date: 2026-09-015
+date: 2026-09-15
 location: ""
 ---
 
