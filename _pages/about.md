@@ -10,8 +10,6 @@ redirect_from:
 
   <div class="home-hero-content">
 
-    <p class="home-hero-label">ASSISTANT PROFESSOR · UNIVERSITY OF TEHRAN</p>
-
     <p class="home-hero-title">
       Biomedical Imaging · Ultrasound · Photoacoustics · AI
     </p>
