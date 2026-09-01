@@ -5,7 +5,7 @@ publications:
   - Paper_Journal_2027_Hakakzadeh_et_al_EchoDSS.md
 
 collection: projects
-category: projects
+category: project
 date: 2026-09-15
 venue: "Phased-Array / Beamforming, Clutter Suppression"
 excerpt: "A Stability-Guided Pixel-Wise Correlation (SG-PWC) beamformer that analyzes the consistency of short-lag inter-channel correlations to suppress cardiac clutter while preserving speckle texture, achieving gCNR = 1.00 and CNR = 4.2 in in-vivo echocardiography."
