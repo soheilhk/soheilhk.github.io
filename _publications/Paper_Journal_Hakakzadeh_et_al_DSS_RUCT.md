@@ -4,7 +4,8 @@ Ultrasound Tomography (Under Review)"
 collection: publications
 category: manuscripts
 permalink: /publication/Paper_Journal_Hakakzadeh_et_al_DSS_RUCT
-excerpt: "We introduce a non-iterative Detector-Subset Stability (DSS) framework for suppressing sparse-sampling streak artifacts in circular PACT while preserving absorber morphology and intensity. Pixel-wise stability maps derived from multiple detector-subset images identify artifact-prone regions and guide correction of the full-detector image. Validation using simulated breast, leaf, and triangle phantoms, as well as in vivo rat-brain data, achieved 96–98% Precision and F1 scores, gCNR values of 0.67–0.73, and SNR gains of up to 57 dB under severe undersampling."
+excerpt: "excerpt: "A Data-Subset Stability (DSS) framework for sparse-transmit reflection ultrasound computed tomography (RUCT) that estimates pixel-wise stability across partitioned transmit events. Validated on point-source, three-circle, and in-vivo mouse datasets across sparsity factors 1 to 16, DSS achieves up to 19 dB SNR gain and a ~5 dB reduction in in-vivo background fluctuations."
+"
 date: 2026-12-19
 authors: "S Hakakzadeh, M Mehrmohammadi"
 venue: ''
