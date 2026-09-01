@@ -67,14 +67,17 @@ Field: Medical Ultrasound
 
 ### Postdoctoral Researcher
 University of Tehran (09/2024 – 09/2025)
+
 Field: Medical Ultrasound & Photoacoutic
 
 ### Ultrasound Research and Development Engineer
 R&D Company (2020 - 2025)
+
 Field: Medical Ultrasound
 
 ### Research engineer
 Iran's National Elites Foundation (09/2020 – 09/2021)
+
 Filed: Enhanced Oil Recovery (EOR) with Ultrasound Waves
 
 ---
