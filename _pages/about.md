@@ -54,17 +54,16 @@ I work across the full imaging pipeline, from raw acoustic data acquisition and 
 
 ## Education
 
-### Ph.D in Electronic Engineering, Sharif University of Technology [09/2021 – 09/2024]
-
-    Field(s) of study: Biomedical Ultrasound & Photoacoustic
+### Ph.D in Electronic Engineering, Sharif University of Technology (09/2021 – 09/2024)
+Field(s) of study: Biomedical Ultrasound & Photoacoustic
     
-### M.S. in Electronic Engineering, Sharif University of Technology [09/2019 – 09/2021]
+### M.S. in Electronic Engineering, Sharif University of Technology (09/2019 – 09/2021)
 
-    Field(s) of study: Biomedical Ultrasound & Photoacoustic
+Field(s) of study: Biomedical Ultrasound & Photoacoustic
     
-### B.S. in Electrical Engineering, K. N. Toosi University of Technology [09/2015 – 09/2019]
+### B.S. in Electrical Engineering, K. N. Toosi University of Technology (09/2015 – 09/2019)
 
-    Field(s) of study: Tracking Circuits 
+Field(s) of study: Tracking Circuits 
 ---
 
 ## Work experience
