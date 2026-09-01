@@ -1,37 +1,18 @@
 ---
 layout: archive
-title: "Publications" 
+title: "Industry Projects"
 permalink: /projects/
-author_profile: true 
+author_profile: true
 ---
-
-{% if site.author.googlescholar %}
-  <p style="margin-bottom: 1.5em; font-size: 0.95em; color: #495057;">
-    <i class="ai ai-google-scholar-square ai-lg" aria-hidden="true" style="color: #4285F4; vertical-align: middle;"></i> 
-    You can also find my articles on <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer" style="font-weight: 600; text-decoration: underline;">Google Scholar</a>.
-  </p>
-{% endif %}
 
 {% include base_path %}
 
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign matching_posts = site.publications | where: "category", category[0] %}
-    {% if matching_posts.size > 0 %}
-      <h2 style="margin-top: 1.8em; margin-bottom: 0.4em; border-bottom: 2px solid #007791; padding-bottom: 4px; font-size: 1.25em;">
-        {{ category[1].title }} <span style="font-size: 0.75em; color: #777; font-weight: normal;">({{ matching_posts.size }})</span>
-      </h2>
-      <div class="publications-list" style="margin-bottom: 1.5em;">
-        {% for post in matching_posts reversed %}
-          {% include archive-single-pub.html %}
-        {% endfor %}
-      </div>
-    {% endif %}
-  {% endfor %}
-{% else %}
-  <div class="publications-list">
-    {% for post in site.publications reversed %}
-      {% include archive-single.html %}
-    {% endfor %}
-  </div>
-{% endif %}
+<p class="page__lead">
+  Since 2020, my work in echocardiography has bridged advanced acoustic beamforming theory with end-to-end medical device engineering through the collaborative design and deployment of a complete clinical-grade echocardiography machine. My contributions span the entire signal processing and software pipeline—from developing adaptive beamforming architectures and specialized clutter-rejection algorithms to implementing high-throughput, GPU-accelerated reconstruction engines and clinical UI frameworks. To address challenging cardiac acoustic windows, I have introduced correlation- and stability-guided beamforming methods (such as SG-PWC) that effectively suppress reverberation and clutter while enhancing endocardial boundary definition and myocardial contrast. Together, these efforts translate physics-driven signal processing into a robust, real-time diagnostic platform for dynamic cardiac imaging.</p>
+
+<!-- Iterates through research items and renders full cards inline -->
+{% for post in site.project reversed %}
+  {% if post.category == "project" %}
+    {% include research-card.html %}
+  {% endif %}
+{% endfor %}
