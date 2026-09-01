@@ -17,9 +17,11 @@ redirect_from:
     </p>
 
     <p class="home-hero-description">
-      I develop advanced medical imaging technologies at the intersection of
-      ultrasound imaging, photoacoustic imaging, computational imaging,
-      high-performance computing, and artificial intelligence.
+     I am an Assistant Professor at the University of Tehran and a dedicated researcher with a PhD in computed
+tomography systems and over five years of industry and work experience in medical imaging, specifically ultrasound
+and photoacoustic technologies. My expertise lies in reconstructing image, designing experimental setups, and
+developing innovative imaging techniques. I am passionate about advancing medical imaging technology to improve
+diagnostic and therapeutic outcomes.
     </p>
 
     <div class="home-hero-links">
