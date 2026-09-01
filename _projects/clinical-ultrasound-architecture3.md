@@ -2,8 +2,8 @@
 title: "Clinical Ultrasound Software & System Architecture"
 collection: projects
 category: project
-date: 2024-01-01
-venue: "Medical Imaging R&D"
+date: 2025-01-01
+venue: "Medical Imaging R&D (2020 - 2025)"
 excerpt: "Architected a real-time, multi-platform software suite for commercial clinical ultrasound, utilizing C++, Qt/QML, and CUDA."
 image: ""
 expanded: true
