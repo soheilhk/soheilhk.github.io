@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergrad Course (Every Semester)"
 permalink: /teaching/Course19_Eco
 venue: "University of Tehran, Biomedical Engineering Department"
-date: 2025-09-015
+date: 2026-09-01
 location: ""
 ---
 Engineering Economics is a course that teaches students how to evaluate engineering projects and make financially sound decisions. It combines engineering analysis with economic principles.
