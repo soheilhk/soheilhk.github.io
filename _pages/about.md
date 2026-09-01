@@ -31,10 +31,6 @@ redirect_from:
         , GitHub
       </a>
 
-      <a href="https://orcid.org/" target="_blank">
-        , ORCID
-      </a>
-
       <a href="/cv/">
         , CV
       </a>
@@ -46,9 +42,7 @@ redirect_from:
 
 <hr>
 
-My research focuses on the development of advanced medical imaging technologies at the intersection of **ultrasound imaging, photoacoustic imaging, computational imaging, high-performance computing, and artificial intelligence**.
-
-I work across the full imaging pipeline, from raw acoustic data acquisition and hardware systems to beamforming, image reconstruction, artifact suppression, and AI-assisted image analysis. My goal is to develop practical and computationally efficient imaging methods that can improve the quality, speed, and clinical utility of ultrasound-based technologies.
+My research focuses on the development of advanced medical imaging technologies at the intersection of **ultrasound imaging, photoacoustic imaging, computational imaging, high-performance computing, and artificial intelligence**. 
 
 ---
 
@@ -87,6 +81,7 @@ Ultrasound computed tomography, sparse and circular-array imaging, image reconst
 Artificial intelligence and deep learning for ultrasound and echocardiography, including image classification, segmentation, speckle tracking, and automated image analysis.
 
 [Explore my research →](/research/)
+
 ---
 
 ## Featured Research
