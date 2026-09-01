@@ -55,7 +55,7 @@ author_profile: false
 
           <p>
             Photoacoustic tomography, sparse-array imaging,
-            computational reconstruction, and artifact suppression.
+            Beamforming, and artifact suppression.
           </p>
 
         </div>
@@ -87,8 +87,8 @@ author_profile: false
           </div>
 
           <p>
-            Reflection ultrasound tomography, sparse acquisition,
-            image reconstruction, and stability-based artifact suppression.
+            Reflection ultrasound tomography, Sparse acquisition,
+            Image reconstruction, and Artifact suppression.
           </p>
 
         </div>
@@ -120,8 +120,8 @@ author_profile: false
           </div>
 
           <p>
-            AI-assisted cardiac ultrasound, view classification,
-            segmentation, speckle tracking, and functional assessment.
+            Beamforming, Image Enhancement,
+            clutter/Artifact Suppression and Functional Assessment.
           </p>
 
         </div>
@@ -153,7 +153,7 @@ author_profile: false
           </div>
 
           <p>
-            Real-time ultrasound imaging, beamforming, Doppler,
+            Real-time ultrasound imaging, Beamforming, Doppler,
             GPU acceleration, and ultrasound system development.
           </p>
 
@@ -186,8 +186,8 @@ author_profile: false
           </div>
 
           <p>
-            Deep learning and AI methods for medical image
-            reconstruction, analysis, segmentation, and automation.
+            Deep learning and AI methods for echocardiograpgy
+            reconstruction, strain analysis, AI analysis, segmentation, and automation.
           </p>
 
         </div>
