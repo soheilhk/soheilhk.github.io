@@ -61,9 +61,26 @@ Field(s) of study: Tracking Circuits
 
 ## Work experience
 
-## Research
+### Assistant Professor
+University of Tehran (09/2025 – Current)
+Field: Medical Ultrasound
 
-### Ultrasound Imaging & Real-Time Systems
+### Postdoctoral Researcher
+University of Tehran (09/2024 – 09/2025)
+Field: Medical Ultrasound & Photoacoutic
+
+### Ultrasound Research and Development Engineer
+R&D Company (2020 - 2025)
+Field: Medical Ultrasound
+
+### Research engineer
+Iran's National Elites Foundation (09/2020 – 09/2021)
+Filed: Enhanced Oil Recovery (EOR) with Ultrasound Waves
+
+---
+
+## Research
+### Ultrasound Imaging
 
 Advanced ultrasound beamforming, GPU-accelerated imaging, Doppler imaging, raw channel-data processing, and real-time ultrasound system development.
 
@@ -83,22 +100,6 @@ Artificial intelligence and deep learning for ultrasound and echocardiography, i
 
 ---
 
-## Featured Research
-
-### Detector-Subset Stability (DSS)
-
-A computational framework for identifying and suppressing reconstruction artifacts using the stability of image features across multiple detector subsets. The method has been investigated for photoacoustic imaging and ultrasound tomography, with applications to sparse and incomplete acquisition.
-
-### Real-Time GPU Ultrasound Imaging
-
-Development of high-performance ultrasound imaging systems using GPU-based beamforming and signal processing, targeting real-time B-mode, Doppler, and advanced ultrasound applications.
-
-### AI-Assisted Echocardiography
-
-Development of AI-based tools for automated echocardiographic analysis, including view classification, segmentation, speckle tracking, and cardiac functional assessment.
-
----
-
 ## Selected Publications
 
 My research has resulted in publications spanning **ultrasound imaging, photoacoustic tomography, computational imaging, beamforming, and medical image reconstruction**.
@@ -106,14 +107,24 @@ My research has resulted in publications spanning **ultrasound imaging, photoaco
 [View all publications →](/publications/)
 
 ---
+## Skills
 
-## Academic & Research Activities
+### Programming Languages
+Proficient: Matlab, C/C++, CUDA, Qt/QML, Python
+
+### Software Skills
+Proficient / Familiar: HFSS, CST, Altium Designer, PSPICE, AutoCAD, ISE, Tensorflow, COMSOL, Silvaco
+
+
+---
+
+## Academic & Industry Research Activities
 
 I am interested in collaborating with researchers and students working in **medical ultrasound, photoacoustic imaging, computational imaging, biomedical signal processing, GPU computing, and artificial intelligence for medical imaging**.
 
 [Explore my research →](/research/)
+
 [View my projects →](/projects/)
-[View my CV →](/cv/)
 
 ---
 
