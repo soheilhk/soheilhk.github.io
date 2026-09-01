@@ -56,6 +56,7 @@ Field(s) of study: Biomedical Ultrasound & Photoacoustic
 ### B.S. in Electrical Engineering, K. N. Toosi University of Technology (09/2015 – 09/2019)
 
 Field(s) of study: Tracking Circuits 
+
 ---
 
 ## Work experience
