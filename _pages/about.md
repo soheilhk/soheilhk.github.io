@@ -8,10 +8,6 @@ redirect_from:
 ---
 <div class="home-hero">
 
-  <div class="home-hero-image">
-    <img src="/images/profile.png" alt="Soheil Hakakzadeh">
-  </div>
-
   <div class="home-hero-content">
 
     <p class="home-hero-label">ASSISTANT PROFESSOR · UNIVERSITY OF TEHRAN</p>
