@@ -42,8 +42,6 @@ redirect_from:
 
 <hr>
 
-My research focuses on the development of advanced medical imaging technologies at the intersection of **ultrasound imaging, photoacoustic imaging, computational imaging, high-performance computing, and artificial intelligence**. 
-
 ---
 
 ## Education
