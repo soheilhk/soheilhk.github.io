@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Echocardiography"
+title: "Ultrasound Imaging (Sonography)"
 permalink: /research/sono/
 author_profile: true
 ---
@@ -13,7 +13,7 @@ author_profile: true
 
 <!-- Iterates through research items and renders full cards inline -->
 {% for post in site.research reversed %}
-  {% if post.category == "echo" %}
+  {% if post.category == "sono" %}
     {% include research-card.html %}
   {% endif %}
 {% endfor %}
