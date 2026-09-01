@@ -52,6 +52,23 @@ I work across the full imaging pipeline, from raw acoustic data acquisition and 
 
 ---
 
+## Education
+
+### Ph.D in Electronic Engineering, Sharif University of Technology [09/2021 – 09/2024]
+
+    Field(s) of study: Biomedical Ultrasound & Photoacoustic
+    
+### M.S. in Electronic Engineering, Sharif University of Technology [09/2019 – 09/2021]
+
+    Field(s) of study: Biomedical Ultrasound & Photoacoustic
+    
+### B.S. in Electrical Engineering, K. N. Toosi University of Technology [09/2015 – 09/2019]
+
+    Field(s) of study: Tracking Circuits 
+---
+
+## Work experience
+
 ## Research
 
 ### Ultrasound Imaging & Real-Time Systems
@@ -70,7 +87,7 @@ Ultrasound computed tomography, sparse and circular-array imaging, image reconst
 
 Artificial intelligence and deep learning for ultrasound and echocardiography, including image classification, segmentation, speckle tracking, and automated image analysis.
 
-[Explore my research →](/research/)**
+[Explore my research →](/research/)
 ---
 
 ## Featured Research
@@ -101,9 +118,9 @@ My research has resulted in publications spanning **ultrasound imaging, photoaco
 
 I am interested in collaborating with researchers and students working in **medical ultrasound, photoacoustic imaging, computational imaging, biomedical signal processing, GPU computing, and artificial intelligence for medical imaging**.
 
-[Explore my research →](/research/)**
-[View my projects →](/projects/)**
-[View my CV →](/cv/)**
+[Explore my research →](/research/)
+[View my projects →](/projects/)
+[View my CV →](/cv/)
 
 ---
 
