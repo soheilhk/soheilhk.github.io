@@ -11,7 +11,7 @@ main:
   - title: "Home"
     url: /
     
-  - title: "Research"
+  - title: "Academic Research"
     url: /research/
     children:
       - title: "Photoacoustic Tomography"
