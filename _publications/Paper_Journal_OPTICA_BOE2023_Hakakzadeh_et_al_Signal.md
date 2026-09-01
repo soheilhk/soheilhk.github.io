@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/Paper_Journal_OPTICA_BOE2023_Hakakzadeh_et_al_Signal
 excerpt: "Overcoming detector bandwidth limitations in PAT via a mask-based restoration strategy—pre-processing raw data to remove unwanted acoustic ripples, resulting in significantly sharper axial resolution and cleaner background reconstruction."
-date: 2022-12-19
+date: 2023-07-19
 authors: "S Hakakzadeh, M Amjadian, Y Zhang, SM Mostafavi, Z Kavehvash, L. Wang"
 venue: 'Biomedical Optics Express'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
