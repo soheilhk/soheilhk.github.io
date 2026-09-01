@@ -12,8 +12,6 @@ redirect_from:
 
     <p class="home-hero-label">ASSISTANT PROFESSOR · UNIVERSITY OF TEHRAN</p>
 
-    <h1>Soheil Hakakzadeh, Ph.D.</h1>
-
     <p class="home-hero-title">
       Biomedical Imaging · Ultrasound · Photoacoustics · AI
     </p>
