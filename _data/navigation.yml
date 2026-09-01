@@ -41,9 +41,9 @@ main:
   - title: "Teaching"
     url: /teaching/
 
-  - title: "CV"
-    url: /cv/
-
-  - title: "Awards/Collaborators"
+  - title: "Awards"
     url: /contact/
+
+  - title: "Gallary"
+    url: /cv/
  
