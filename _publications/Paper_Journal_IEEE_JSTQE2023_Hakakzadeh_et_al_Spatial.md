@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/Paper_Journal_IEEE_JSTQE2023_Hakakzadeh_et_al_Spatial
 excerpt: "Enabling low-cost, sparse-aperture full-ring PAI via spatial-domain artifact suppression—eliminating spatial undersampling streak artifacts with 1/5th the Nyquist channel count and achieving a 38.6 dB CNR boost."
-date: 2022-12-19
+date: 2023-01-19
 authors: "S Hakakzadeh, P Rajendran, VA Nili, Z Kavehvash, M Pramanik"
 venue: 'IEEE Journal of Selected Topics in Quantum Electronic'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
