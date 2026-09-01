@@ -45,8 +45,6 @@ redirect_from:
 </div>
 
 <hr>
-**Assistant Professor of Biomedical Engineering**
-**University of Tehran**
 
 My research focuses on the development of advanced medical imaging technologies at the intersection of **ultrasound imaging, photoacoustic imaging, computational imaging, high-performance computing, and artificial intelligence**.
 
@@ -72,6 +70,7 @@ Ultrasound computed tomography, sparse and circular-array imaging, image reconst
 
 Artificial intelligence and deep learning for ultrasound and echocardiography, including image classification, segmentation, speckle tracking, and automated image analysis.
 
+[Explore my research →](/research/)**
 ---
 
 ## Featured Research
@@ -102,9 +101,9 @@ My research has resulted in publications spanning **ultrasound imaging, photoaco
 
 I am interested in collaborating with researchers and students working in **medical ultrasound, photoacoustic imaging, computational imaging, biomedical signal processing, GPU computing, and artificial intelligence for medical imaging**.
 
-[Explore my research →](/research/)
-[View my projects →](/projects/)
-[View my CV →](/cv/)
+[Explore my research →](/research/)**
+[View my projects →](/projects/)**
+[View my CV →](/cv/)**
 
 ---
 
