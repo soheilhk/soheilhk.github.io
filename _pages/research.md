@@ -13,10 +13,7 @@ author_profile: false
       <div class="research-accent"></div>
 
       <p>
-        My research focuses on advancing medical imaging technologies
-        through the integration of ultrasound, photoacoustic imaging,
-        computational methods, high-performance computing, and
-        artificial intelligence.
+My research focuses on the development of advanced ultrasound and photoacoustic imaging technologies, spanning computational imaging, signal processing, image reconstruction, beamforming, and high-performance imaging systems. I am particularly interested in addressing the challenges of sparse and limited data acquisition, reconstruction artifacts, and the computational demands of modern medical imaging. My work combines theoretical algorithm development with experimental validation using phantom and in-vivo datasets.
       </p>
 
       <p>
