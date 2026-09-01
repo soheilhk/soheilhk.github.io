@@ -1,7 +1,7 @@
 
 ---
 permalink: /
-title: "Soheil Hakakzadeh, Ph.D"
+title: "Wellcome to my homepage"
 author_profile: true
 redirect_from:
   - /about/
@@ -9,16 +9,12 @@ redirect_from:
 ---
 <div class="home-hero">
 
-  <div class="home-hero-image">
-    <img src="/images/profile.png" alt="Soheil Hakakzadeh">
-  </div>
-
   <div class="home-hero-content">
 
-    <p class="home-hero-label">ASSISTANT PROFESSOR · UNIVERSITY OF TEHRAN</p>
+    
 
     <h1>Soheil Hakakzadeh, Ph.D.</h1>
-
+    <p class="home-hero-label">ASSISTANT PROFESSOR · UNIVERSITY OF TEHRAN</p>
     <p class="home-hero-title">
       Biomedical Imaging · Ultrasound · Photoacoustics · AI
     </p>
