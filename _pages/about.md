@@ -28,15 +28,15 @@ redirect_from:
       </a>
 
       <a href="https://github.com/soheilhk" target="_blank">
-        GitHub
+        , GitHub
       </a>
 
       <a href="https://orcid.org/" target="_blank">
-        ORCID
+        , ORCID
       </a>
 
       <a href="/cv/">
-        CV
+        , CV
       </a>
     </div>
 
