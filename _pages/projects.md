@@ -1,6 +1,6 @@
 
 ---
-permalink: /
+permalink: /projects/
 title: "Wellcome to my homepage"
 author_profile: true
 redirect_from:
