@@ -1,5 +1,5 @@
 ---
-title: "Medical Imaging"
+title: "Engineering Economics"
 collection: teaching
 type: "Undergrad Course (Every Semester)"
 permalink: /teaching/Course19_Eco
