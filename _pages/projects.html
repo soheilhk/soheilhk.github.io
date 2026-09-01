@@ -12,8 +12,8 @@ author_profile: true
 </p>
 
 <!-- Iterates through research items and renders full cards inline -->
-{% for post in site.project reversed %}
+{% for post in site.projects reversed %}
   {% if post.category == "project" %}
-    {% include research-card.html %}
+    {% include project-card.html %}
   {% endif %}
 {% endfor %}
