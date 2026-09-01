@@ -4,7 +4,7 @@ Ultrasound Tomography (Under Review)"
 collection: publications
 category: manuscripts
 permalink: /publication/Paper_Journal_Hakakzadeh_et_al_DSS_RUCT
-excerpt: "excerpt: "A Data-Subset Stability (DSS) framework for sparse-transmit reflection ultrasound computed tomography (RUCT) that estimates pixel-wise stability across partitioned transmit events. Validated on point-source, three-circle, and in-vivo mouse datasets across sparsity factors 1 to 16, DSS achieves up to 19 dB SNR gain and a ~5 dB reduction in in-vivo background fluctuations."
+excerpt: "A Data-Subset Stability (DSS) framework for sparse-transmit reflection ultrasound computed tomography (RUCT) that estimates pixel-wise stability across partitioned transmit events. Validated on point-source, three-circle, and in-vivo mouse datasets across sparsity factors 1 to 16, DSS achieves up to 19 dB SNR gain and a ~5 dB reduction in in-vivo background fluctuations."
 "
 date: 2026-12-19
 authors: "S Hakakzadeh, M Mehrmohammadi"
