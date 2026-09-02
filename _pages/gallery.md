@@ -6,17 +6,17 @@ author_profile: true
 redirect_from:
   - /resume
 gallery:
-  - image_path: "Best PhD Thesis 2.PNG"
+  - image_path: "gallery/Best PhD Thesis 2.PNG"
     title: "Best PhD Graduate (Electrical Engineering), Sharif University of Technology — 2025"
-  - image_path: "Best Phd Thesis 1.jpg"
+  - image_path: "gallery/Best Phd Thesis 1.jpg"
     title: "Best PhD Graduate (Electrical Engineering), Sharif University of Technology — 2025"
-  - image_path: "Best Paper ICBME.pdf"
+  - image_path: "gallery/Best Paper ICBME.pdf"
     title: "Distinguished Paper Award, IEEE ICBME Conference — 2021"
-  - image_path: "Msc IEEE Award.jpg"
+  - image_path: "gallery/Msc IEEE Award.jpg"
     title: "Outstanding M.Sc. Thesis Award, IEEE Iran Section — 2021"
-  - image_path: "Msc IEEE Award 2.jpg"
+  - image_path: "gallery/Msc IEEE Award 2.jpg"
     title: "Outstanding M.Sc. Thesis Award, IEEE Iran Section — 2021"
-  - image_path: "Next Award 2.JPG"
+  - image_path: "gallery/Next Award 2.JPG"
     title: "Gold Medal, NEXT National Technology Award, Vice-Presidency for Science & Technology — 2024"
 ---
 
