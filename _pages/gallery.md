@@ -14,5 +14,5 @@ gallery:
 ---
 
 ### Visual Documentation
-Milestones, academic honors, and key moments from my research career.
+A curated collection of academic milestones, professional achievements, and research highlights. This gallery documents my journey through doctoral studies, specialized training, and the recognition received from the scientific community.
 {% include gallery.html %}
