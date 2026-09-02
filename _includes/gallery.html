@@ -1,49 +1,61 @@
-{% include base_path %}
-
 {% if include.id %}
-  {% assign gallery = page.[include.id] %}
+  {% assign gallery = page[include.id] %}
 {% else %}
   {% assign gallery = page.gallery %}
 {% endif %}
 
-{% if gallery.size == 2 %}
-  {% assign gallery_layout = 'half' %}
-{% elsif gallery.size >= 3 %}
-  {% assign gallery_layout = 'third' %}
-{% else %}
-  {% assign gallery_layout = '' %}
-{% endif %}
-
-<figure class="{{ gallery_layout }} {{ include.class }}">
+<div class="gallery-grid">
   {% for img in gallery %}
-    {% if img.url %}
-      <a href=
-        {% if img.url contains "://" %}
-          "{{ img.url }}"
-        {% else %}
-          "{{ img.url | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        {% if img.title %}title="{{ img.title }}"{% endif %}
-      >
-        <img src=
-          {% if img.image_path contains "://" %}
-            "{{ img.image_path }}"
-          {% else %}
-            "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="{% if img.alt %}{{ img.alt }}{% endif %}">
-      </a>
-    {% else %}
-      <img src=
-        {% if img.image_path contains "://" %}
-          "{{ img.image_path }}"
-        {% else %}
-          "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
-    {% endif %}
+    <figure class="gallery-item">
+      {% if img.url %}
+        <a href="{% if img.url contains '://' %}{{ img.url }}{% else %}{{ img.url | prepend: '/images/' | prepend: base_path }}{% endif %}" title="{{ img.title | default: img.caption }}">
+          <img src="{{ img.image_path | prepend: '/images/' | prepend: base_path }}" alt="{{ img.alt | default: img.title | default: img.caption }}">
+        </a>
+      {% else %}
+        <img src="{{ img.image_path | prepend: '/images/' | prepend: base_path }}" alt="{{ img.alt | default: img.title | default: img.caption }}">
+      {% endif %}
+      
+      {% if img.caption or img.title %}
+        <figcaption class="gallery-caption">{{ img.caption | default: img.title }}</figcaption>
+      {% endif %}
+    </figure>
   {% endfor %}
-  {% if include.caption %}
-    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
-  {% endif %}
-</figure>
+</div>
+
+<style>
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.gallery-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #e1e4e8;
+}
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.gallery-caption {
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #4a5568;
+  text-align: center;
+  background: #fafbfc;
+  border-top: 1px solid #f0f3f6;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
