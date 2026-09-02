@@ -3,21 +3,25 @@ layout: archive
 title: "Gallery"
 permalink: /gallery/
 author_profile: true
-redirect_from:
-  - /resume
 gallery:
   - image_path: "gallery/Best PhD Thesis 2.PNG"
-    title: "Best PhD Graduate (Electrical Engineering), Sharif University of Technology — 2025"
+    caption: "Best PhD Graduate (Electrical Engineering), Sharif University of Technology — 2025"
+    alt: "Sharif Best PhD Graduate"
   - image_path: "gallery/Best Phd Thesis 1.jpg"
-    title: "Best PhD Graduate (Electrical Engineering), Sharif University of Technology — 2025"
+    caption: "Best PhD Graduate (Electrical Engineering), Sharif University of Technology — 2025"
+    alt: "Sharif Best PhD Graduate Ceremony"
   - image_path: "gallery/Best Paper ICBME.pdf"
-    title: "Distinguished Paper Award, IEEE ICBME Conference — 2021"
+    caption: "Distinguished Paper Award, IEEE ICBME Conference — 2021"
+    alt: "Distinguished Paper Award"
   - image_path: "gallery/Msc IEEE Award.jpg"
-    title: "Outstanding M.Sc. Thesis Award, IEEE Iran Section — 2021"
+    caption: "Outstanding M.Sc. Thesis Award, IEEE Iran Section — 2021"
+    alt: "IEEE Outstanding Thesis Award"
   - image_path: "gallery/Msc IEEE Award 2.jpg"
-    title: "Outstanding M.Sc. Thesis Award, IEEE Iran Section — 2021"
+    caption: "Outstanding M.Sc. Thesis Award, IEEE Iran Section — 2021"
+    alt: "IEEE Award Ceremony"
   - image_path: "gallery/Next Award 2.JPG"
-    title: "Gold Medal, NEXT National Technology Award, Vice-Presidency for Science & Technology — 2024"
+    caption: "Gold Medal, NEXT National Technology Award — 2024"
+    alt: "NEXT National Technology Award"
 ---
 
 {% include base_path %}
