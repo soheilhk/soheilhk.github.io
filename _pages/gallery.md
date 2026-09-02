@@ -5,8 +5,6 @@ permalink: /gallery/
 author_profile: true
 redirect_from:
   - /resume
-
-{% include base_path %}
 gallery:
   - image_path: "project-1-architecture.png"
     title: "System Architecture Diagram"
@@ -18,6 +16,9 @@ gallery:
     title: "AI Segmentation"
 ---
 
+{% include base_path %}
+
 ### Visual Documentation
 A curated collection of academic milestones, professional achievements, and research highlights. This gallery documents my journey through doctoral studies, specialized training, and the recognition received from the scientific community.
+
 {% include gallery.html %}
