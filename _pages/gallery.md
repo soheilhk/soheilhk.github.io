@@ -1,18 +1,12 @@
 ---
 layout: archive
-title: "CV"
-permalink: /cv/
+title: "Gallery"
+permalink: /gallery/
 author_profile: true
 redirect_from:
   - /resume
----
 
 {% include base_path %}
-
----
-layout: page
-title: "Gallery"
-permalink: /gallery/
 gallery:
   - image_path: "project-1-architecture.png"
     title: "System Architecture Diagram"
