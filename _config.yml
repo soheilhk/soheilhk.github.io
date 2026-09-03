@@ -239,6 +239,9 @@ collections:
   autoStrain_project:
     output: true
     permalink: /:collection/:path/
+  ultrasound_machine_project:
+    output: true
+    permalink: /:collection/:path/
   research:
     output: true
     permalink: /:collection/:path/
