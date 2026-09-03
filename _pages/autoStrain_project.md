@@ -83,7 +83,6 @@ The application initializes local runtime environments, CUDA acceleration contex
 *   Synchronized segmental strain-time curves referenced against Aortic Valve Closure (AVC).
 *   Dynamic spatiotemporal strain colormap (curved M-mode) with click-to-approve segment verification.
 
-![Speckle Tracking Analysis](../images/projects/autoStrain/6_SpeckleTracking.PNG)
 ![Speckle Tracking Analysis](../images/projects/autoStrain/LV-quad_0.gif)
 *Figure 6: Longitudinal strain analysis showing segmental waveforms, global strain calculation ($GS = -23\%$), and curved M-mode heatmap.*
 
