@@ -10,7 +10,22 @@ The architecture bridges custom analog/digital front-end hardware (AFE, FPGA), r
 
 ---
 
-## 1. System Architecture & Hardware-Software Pipeline
+## 1. Platform Hardware Design
+
+The cart-based platform was designed around a dual-display ergonomic architecture: a high-resolution primary clinical monitor mounted on an articulating arm, and an integrated multi-touch control panel embedded within the physical console. The mobile trolley provides probe holders, peripheral storage, and cable-managed mobility for bedside and examination-room workflows.
+
+![Cart-Based Ultrasound System Design](../images/projects/ultrasound/US_Body.png)
+*Figure 1: Cart-based clinical ultrasound platform (front and side views): articulating primary monitor, embedded touch control panel, physical console with probe holders, and mobile trolley with cable management.*
+
+### Ergonomic & Industrial Design Highlights
+*   **Articulating Monitor Boom:** Multi-axis primary display arm with height/angle adjustment for seated and standing scanning postures.
+*   **Integrated Console:** Physical control surface (keypad, rotary knobs, gain sliders) merged with the secondary multi-touch panel for hybrid tactile/digital operation.
+*   **Probe Management:** Multi-transducer holders with automatic probe identification and instant preset recall.
+*   **Mobile Trolley:** Locking caster wheels, compact footprint, and integrated cable routing for examination-room mobility.
+
+---
+
+## 2. System Architecture & Hardware-Software Pipeline
 
 The platform follows a modular, low-latency architecture optimized for high frame rates, adaptive acoustic beamforming, and responsive clinical control.
 
@@ -25,7 +40,7 @@ The platform follows a modular, low-latency architecture optimized for high fram
 
 ---
 
-## 2. Touch Panel Interface & Clinical Workflow Control
+## 3. Touch Panel Interface & Clinical Workflow Control
 
 A dedicated secondary touchscreen running an optimized Qt/QML interface provides immediate tactile control over scanning parameters, active transducers, and anatomical markers.
 
@@ -39,7 +54,7 @@ A dedicated secondary touchscreen running an optimized Qt/QML interface provides
 
 ---
 
-## 3. Advanced Beamforming & Real-Time Signal Processing
+## 4. Advanced Beamforming & Real-Time Signal Processing
 
 To achieve high contrast resolution and edge preservation across deep and superficial imaging depths, advanced beamforming schemes were designed, simulated, and deployed in CUDA/C++:
 
@@ -57,7 +72,7 @@ To achieve high contrast resolution and edge preservation across deep and superf
 
 ---
 
-## 4. Comprehensive Imaging Modalities
+## 5. Comprehensive Imaging Modalities
 
 The system supports multi-probe array geometries and full-spectrum clinical imaging modalities:
 
@@ -72,7 +87,7 @@ The system supports multi-probe array geometries and full-spectrum clinical imag
 
 ---
 
-## 5. Clinical Echocardiography Gallery
+## 6. Clinical Echocardiography Gallery
 
 The phased-array cardiac engine is optimized for high temporal resolution (up to $50+\text{ fps}$), wide dynamic range ($50\text{ dB}$), and penetration up to $15\text{ cm}$ for adult transthoracic echocardiography.
 
@@ -84,7 +99,7 @@ The phased-array cardiac engine is optimized for high temporal resolution (up to
 
 ---
 
-## 6. Review Station, DICOM Archival & Structured Reporting
+## 7. Review Station, DICOM Archival & Structured Reporting
 
 The software includes a PACS-compliant review station and database management subsystem for seamless hospital workflow integration.
 
@@ -97,7 +112,7 @@ The software includes a PACS-compliant review station and database management su
 
 ---
 
-## 7. Technology Stack Summary
+## 8. Technology Stack Summary
 
 *   **Hardware & Front-End:** Analog Front-End (AFE), High-Voltage Pulsers, T/R Switches, Custom FPGA Acquisition Boards.
 *   **Compute & Algorithms:** C++, CUDA, MATLAB (Prototyping), SIMD Optimizations, OpenGL/Vulkan rendering.
