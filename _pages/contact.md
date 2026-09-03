@@ -2,9 +2,9 @@
 permalink: /contact/
 author_profile: true
 ---
-# autoStrain: AI-Powered Echocardiography Analysis Platform
+# autoEcho: AI-Powered Echocardiography Analysis Platform
 
-**autoStrain** is an advanced clinical workstation software designed for automated cardiac function assessment from 2D echocardiography cine loops. Built with a high-performance C++/Qt/QML front-end and a deep learning backend, it streamlines echocardiographic workflows by providing automated view classification, myocardial border delineation, speckle tracking deformation analysis, volumetric assessment, and structured clinical reporting.
+**autoEcho** is an advanced clinical workstation software designed for automated cardiac function assessment from 2D echocardiography cine loops. Built with a high-performance C++/Qt/QML front-end and a deep learning backend, it streamlines echocardiographic workflows by providing automated view classification, myocardial border delineation, speckle tracking deformation analysis, volumetric assessment, and structured clinical reporting.
 
 ---
 
@@ -32,7 +32,7 @@ The clinical pipeline follows a structured, two-phase modular workflow that bala
 ### Step 1: Application Boot & Environment Initialization
 The application initializes local runtime environments, CUDA acceleration contexts, and model weights via a modern dark-gold clinical UI.
 
-![Application Boot Screen](images/projects/autostrain/1_Starting.PNG)
+![Application Boot Screen](../images/projects/autoStrain/1_Starting.PNG)
 *Figure 1: Cardio App initialization screen displaying runtime environment loading.*
 
 ---
