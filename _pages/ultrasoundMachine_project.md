@@ -1,6 +1,6 @@
 ---
 title: "End-to-End Clinical Ultrasound & Echocardiography Machine"
-permalink: /ultrasound_machine_project/
+permalink: /ultrasoundMachine_project/
 author_profile: true
 ---
 
