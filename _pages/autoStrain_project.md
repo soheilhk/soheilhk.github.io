@@ -6,7 +6,7 @@ author_profile: true
 
 ## AutoEcho: AI-Powered Echocardiography Analysis Platform
 
-**autoEcho** is an advanced clinical workstation software designed for automated cardiac function assessment from 2D echocardiography cine loops. Built with a high-performance C++/Qt/QML front-end and a deep learning backend, it streamlines echocardiographic workflows by providing automated view classification, myocardial border delineation, speckle tracking deformation analysis, volumetric assessment, and structured clinical reporting.
+**AutoEcho** is an advanced clinical workstation software designed for automated cardiac function assessment from 2D echocardiography cine loops. Built with a high-performance C++/Qt/QML front-end and a deep learning backend, it streamlines echocardiographic workflows by providing automated view classification, myocardial border delineation, speckle tracking deformation analysis, volumetric assessment, and structured clinical reporting.
 
 ---
 
