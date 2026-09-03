@@ -22,7 +22,7 @@ The clinical pipeline follows a structured, two-phase modular workflow that bala
     *   **Automated Strain Quantification:** Segmental time-strain curves, Global Longitudinal Strain (GLS), and anatomical curved M-mode colormaps.
     *   **Volumetric Assessment:** Automated Biplane Simpson’s disc summation for LV volumes (EDV, ESV, SV) and Ejection Fraction (LVEF).
     *   **Clinical Reporting & Polar Maps:** AHA 17-segment polar bullseye maps (peak strain and time-to-peak dyssynchrony) alongside structured PACS/PDF reporting.
-
+![Application Workflow Diagram](../images/projects/autoStrain/0_Workflow.PNG)
 
 
 ---
@@ -42,7 +42,7 @@ The application initializes local runtime environments, CUDA acceleration contex
 *   Structured study list displaying Patient ID, Patient Name, Study Date/Time, Modality (`US`), and Series Object Types.
 *   Real-time search filtering by patient demographic and date range.
 
-![Study Management Interface](images/projects/autostrain/2_StudyList.PNG)
+![Study Management Interface](../images/projects/autostrain/2_StudyList.PNG)
 *Figure 2: Clinical study browser with multi-patient filtering and DICOM inspection.*
 
 ---
@@ -52,7 +52,7 @@ The application initializes local runtime environments, CUDA acceleration contex
 *   Interactive controls: frame scrubbing, variable speed playback ($0.25\times$ to $2.0\times$), brightness, and contrast optimization.
 *   Targeted chamber selection modal: **Left Ventricle (LV)**, **Right Ventricle (RV)**, and **Left Atrium (LA)** analysis modules.
 
-![Multi-Viewport Workspace](images/projects/autostrain/3_AnalysisPage.PNG)
+![Multi-Viewport Workspace](../images/projects/autostrain/3_AnalysisPage.PNG)
 *Figure 3: Synchronized tri-view cine workstation with targeted cardiac chamber selection.*
 
 ---
@@ -62,7 +62,7 @@ The application initializes local runtime environments, CUDA acceleration contex
 *   ECG trace synchronization for automated R-wave detection and cardiac cycle gating.
 *   Bottom thumbnail strip navigation enabling frame-accurate scrubbing across the cardiac cycle.
 
-![AI View Detection](assets/images/projects/autostrain/4_ViewDetectionPage.PNG)
+![AI View Detection](../images/projects/autostrain/4_ViewDetectionPage.PNG)
 *Figure 4: Automated view classification badge (4CH, 99%) with ECG-synchronized frame navigator.*
 
 ---
@@ -72,7 +72,7 @@ The application initializes local runtime environments, CUDA acceleration contex
 *   Automated identification of End-Diastole (ED Frame) and End-Systole (ES Frame).
 *   Interactive **Edit Mode** allowing clinicians to fine-tune control points prior to speckle tracking.
 
-![AI Segmentation Page](images/projects/autostrain/5_SegmentationPage.PNG)
+![AI Segmentation Page](../images/projects/autostrain/5_SegmentationPage.PNG)
 *Figure 5: Myocardial contouring across myocardial walls with automated ED/ES frame identification.*
 
 ---
@@ -83,7 +83,8 @@ The application initializes local runtime environments, CUDA acceleration contex
 *   Synchronized segmental strain-time curves referenced against Aortic Valve Closure (AVC).
 *   Dynamic spatiotemporal strain colormap (curved M-mode) with click-to-approve segment verification.
 
-![Speckle Tracking Analysis](images/projects/autostrain/6_SpeckleTracking.PNG)
+![Speckle Tracking Analysis](../images/projects/autostrain/6_SpeckleTracking.PNG)
+![Speckle Tracking Analysis](../images/projects/autostrain/LV-quad_0.gif)
 *Figure 6: Longitudinal strain analysis showing segmental waveforms, global strain calculation ($GS = -23\%$), and curved M-mode heatmap.*
 
 ---
@@ -98,7 +99,7 @@ The application initializes local runtime environments, CUDA acceleration contex
     *   **LVEF:** Ejection Fraction ($58\%$)
     *   **LVCO:** Cardiac Output ($4.0\text{ l/min}$)
 
-![Volumetric and EF Analysis](images/projects/autostrain/8_EF.PNG)
+![Volumetric and EF Analysis](../images/projects/autostrain/8_EF.PNG)
 *Figure 7: Automated volumetric assessment showing EDV/ESV cavity segmentation and Simpson's EF quantification.*
 
 ---
@@ -109,7 +110,7 @@ The application initializes local runtime environments, CUDA acceleration contex
     *   **Peak Systolic Longitudinal Strain Bullseye:** Identifies regional wall motion abnormalities and ischemic territories.
     *   **Time-to-Peak (TTP) Dyssynchrony Bullseye:** Maps mechanical contraction delays and computes Phase Standard Deviation ($PSD$ in ms) for cardiac resynchronization assessment.
 
-![Tri-Plane Bullseye Maps](images/projects/autostrain/7_BullsEyes.png)
+![Tri-Plane Bullseye Maps](../images/projects/autostrain/7_BullsEyes.png)
 *Figure 8: Synchronized tri-plane strain waveforms (4CH, 2CH, 3CH) and standard 17-segment polar bullseye maps.*
 
 ---
@@ -120,7 +121,7 @@ The application initializes local runtime environments, CUDA acceleration contex
 *   Embedded side-by-side polar maps (Peak Strain and Mechanical Activation Delay).
 *   Interactive *Physician Impression* editor for clinical commentary, with one-click export to PACS and PDF formats.
 
-![Clinical Reporting Page](images/projects/autostrain/9_ReportPage.PNG)
+![Clinical Reporting Page](../images/projects/autostrain/9_ReportPage.PNG)
 *Figure 9: Comprehensive clinical report dashboard with automated metrics table, polar plots, and impression editor.*
 
 ---
